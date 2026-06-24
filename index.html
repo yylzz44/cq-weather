@@ -179,8 +179,8 @@
     .tl-card{padding:10px 12px}
     .tl-card .tl-t{font-size:10px}
     .tl-card .tl-d{font-size:10px}
-    .week-row{flex-wrap:wrap;gap:4px}
-    .week-day{min-width:13%;padding:8px 2px}
+    .week-row{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+    .week-day{padding:6px 1px}
     .wd-date{font-size:8px}
     .wd-icon{font-size:16px}
     .wd-desc{font-size:9px}
@@ -199,6 +199,8 @@
     .footer-left{font-size:10px}
     .footer-brand{text-align:center;font-size:10px}
     .footer-right img{height:40px}
+    /* 地图下方图例缩小 */
+    #cqMap + div{font-size:9px!important;gap:8px!important}
   }
   @media print{body{background:#fff;padding:0}.poster{box-shadow:none;border-radius:0}}
 </style>
@@ -325,7 +327,7 @@
     <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">分场景防灾指引</div></div>
     <div class="guide-grid">
       <div class="guide-card">
-        <div class="gc-head"><div class="gc-icon gc-biz">🏭</div><div class="gc-name">企业客户</div></div>
+        <div class="gc-head"><div class="gc-icon gc-biz">🏭</div><div class="gc-name">团体客户</div></div>
         <ul><li>检查厂房仓库屋顶防水及排水系统</li><li>低层物资、设备提前转移至高位</li><li>配备沙袋、抽水泵等防汛物资</li><li>排查周边边坡稳定性，防范滑坡</li><li>安排专人24小时应急值班</li></ul>
       </div>
       <div class="guide-card">
@@ -445,34 +447,37 @@
           mapData.push({ name: name, value: val, level: level });
         });
 
+        var isMobile = vw < 600;
         var option = {
           tooltip: { show: false },
           visualMap: {
             show: true,
-            orient: 'horizontal',
-            left: 'center',
-            bottom: 8,
-            itemWidth: 14,
+            orient: isMobile ? 'vertical' : 'horizontal',
+            left: isMobile ? 8 : 'center',
+            bottom: isMobile ? 50 : 8,
+            top: isMobile ? 60 : 'auto',
+            itemWidth: 10,
             itemHeight: 10,
-            textStyle: { color: '#666', fontSize: 10 },
+            itemGap: isMobile ? 4 : 10,
+            textStyle: { color: '#666', fontSize: isMobile ? 9 : 10 },
             pieces: [
-              { value: 5, label: '地灾+暴雨双高', color: '#EF4444' },
-              { value: 4, label: '地灾橙色预警', color: '#F97316' },
-              { value: 3, label: '地灾黄色预警', color: '#EAB308' },
-              { value: 2, label: '地灾蓝色预警', color: '#3B82F6' },
-              { value: 1, label: '关注区域', color: '#e8e8e8' }
+              { value: 5, label: isMobile ? '双高' : '地灾+暴雨双高', color: '#EF4444' },
+              { value: 4, label: isMobile ? '橙警' : '地灾橙色预警', color: '#F97316' },
+              { value: 3, label: isMobile ? '黄警' : '地灾黄色预警', color: '#EAB308' },
+              { value: 2, label: isMobile ? '蓝警' : '地灾蓝色预警', color: '#3B82F6' },
+              { value: 1, label: isMobile ? '关注' : '关注区域', color: '#e8e8e8' }
             ]
           },
           series: [{
             type: 'map',
             map: 'chongqing',
             roam: false,
-            zoom: 1.1,
+            zoom: isMobile ? 1.08 : 1.1,
             center: [107.6, 29.8],
             aspectScale: 0.85,
             label: {
               show: true,
-              fontSize: vw < 600 ? 5 : 7,
+              fontSize: isMobile ? 5 : 7,
               fontWeight: 500,
               color: '#333',
               formatter: function(p) {
@@ -487,7 +492,7 @@
               }
             },
             emphasis: {
-              label: { fontSize: 13, fontWeight: 'bold' },
+              label: { fontSize: isMobile ? 10 : 13, fontWeight: 'bold' },
               itemStyle: { areaColor: '#FDE68A' }
             },
             itemStyle: {
