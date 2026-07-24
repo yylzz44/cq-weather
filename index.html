@@ -362,14 +362,14 @@ footer a{color:var(--red);text-decoration:none}
       <div class="alert-side">
         <div class="side-card">
           <span class="side-tag">国家级提示</span>
-          <h4>中央气象台 · 高温黄色预警</h4>
-          <p>预计7月23日白天，重庆中西部有35℃以上高温天气，部分地区最高气温37～39℃，重庆西部局地可达40℃以上。请有关部门和单位做好防暑降温准备工作。</p>
+          <h4>中央气象台 · 全国预警</h4>
+          <p>中央气象台每日滚动发布全国气象预警，涉及重庆的部分会在本页左侧预警列表中同步收录。如需查看全国范围的高温、暴雨、台风等国家级预警原文，请访问中央气象台预警发布页。</p>
           <a href="http://www.nmc.cn/publish/alarm.html" target="_blank" rel="noopener">查看中央气象台预警 →</a>
         </div>
         <div class="side-card">
           <span class="side-tag">联合发布</span>
           <h4>地质灾害气象风险预警</h4>
-          <p>重庆市规划和自然资源局、重庆市气象局已联合发布今日（7月23日）全市地质灾害气象风险预警图（24小时预报）。前期我市经历多轮强降雨，地质灾害具有滞后性，山区群众请远离沟谷、斜坡、陡崖等高风险地带，接到转移指令立即撤离。</p>
+          <p>重庆市规划和自然资源局、重庆市气象局每日联合发布全市地质灾害气象风险预警图（24小时预报），点击下图链接查看最新一期。地质灾害具有滞后性，雨后数日仍需警惕，山区群众请远离沟谷、斜坡、陡崖等高风险地带，接到转移指令立即撤离。</p>
           <a id="dzzyLink" href="#" target="_blank" rel="noopener">查看今日地灾预警图（官方） →</a>
         </div>
       </div>
@@ -3912,22 +3912,58 @@ const cnt = {红色:0,橙色:0,黄色:0,蓝色:0};
 DATA.alerts.forEach(a=>{ if(cnt[a.level]!==undefined) cnt[a.level]++; });
 const types = {};
 DATA.alerts.forEach(a=>{ types[a.type]=(types[a.type]||0)+1; });
-document.getElementById('heroSummary').textContent =
-  `截至今日${DATA.updated.slice(11)}，全市共有 ${DATA.alerts.length} 条气象预警生效，其中红色 ${cnt.红色} 条、橙色 ${cnt.橙色} 条、黄色 ${cnt.黄色} 条、蓝色 ${cnt.蓝色} 条；`+
-  `涉及`+Object.entries(types).map(([k,v])=>`${k}${v}条`).join('、')+
-  `。中心城区实况 ${cq.t}℃、体感 ${cq.feel}℃，晴热持续，请做好防暑降温与火灾、强对流天气防范。`;
-const redN = cnt.红色;
-document.getElementById('heroHeadline').textContent =
-  `${redN}条红色预警高挂，山城开启"炙烤模式"`;
-document.getElementById('headlineTag').textContent =
-  `高温红色预警 · ${DATA.alerts.length}条预警生效中`;
+/* 主导预警类型：按最高级别、再按数量排序 */
+const typeRank = {};
+DATA.alerts.forEach(a=>{
+  const lv = LV_ORD[a.level]||0;
+  if(!typeRank[a.type] || lv>typeRank[a.type].lv) typeRank[a.type]={lv,n:0};
+  typeRank[a.type].n++;
+});
+const dom = Object.entries(typeRank).sort((a,b)=> b[1].lv-a[1].lv || b[1].n-a[1].n)[0];
+const domLv = dom ? Object.keys(LV_ORD).find(k=>LV_ORD[k]===dom[1].lv) : '';
+const TIPS = {
+  '高温':'晴热持续，请做好防暑降温，户外作业谨防热射病',
+  '暴雨':'注意防范城乡积涝、山洪及滑坡等次生灾害',
+  '大风':'注意防范大风，勿在广告牌、枯树下逗留',
+  '雷电':'强对流天气活跃，注意防雷避雨',
+  '冰雹':'注意防范冰雹，车辆及时移入室内或加盖防护',
+  '森林（草原）火险':'森林火险等级高，严禁野外用火',
+  '大雾':'能见度低，出行注意交通安全',
+};
+const HEADLINE = {
+  '高温': n=>`${cnt.红色>0?cnt.红色+'条红色预警高挂，':''}山城持续"炙烤模式"`,
+  '暴雨': n=>`暴雨预警生效中，严防积涝与地质灾害`,
+  '大风': n=>`大风预警生效中，注意防风避险`,
+  '雷电': n=>`强对流天气来袭，注意防雷避雨`,
+  '冰雹': n=>`冰雹预警生效中，注意防护车辆与作物`,
+  '森林（草原）火险': n=>`森林火险预警生效中，严禁野外用火`,
+  '大雾': n=>`大雾预警生效中，出行注意安全`,
+};
+const tipTxt = Object.keys(types).map(t=>TIPS[t]).filter(Boolean)[0] || '请关注天气变化';
+if(DATA.alerts.length===0){
+  document.getElementById('heroSummary').textContent =
+    `截至今日${DATA.updated.slice(11)}，全市无生效气象预警。中心城区实况 ${fmtT(cq.t)}℃、体感 ${fmtT(cq.feel)}℃，天气总体平稳，请关注最新预报。`;
+  document.getElementById('heroHeadline').textContent = '今日全市无气象预警，天气平稳';
+  document.getElementById('headlineTag').textContent = '今日无预警';
+}else{
+  document.getElementById('heroSummary').textContent =
+    `截至今日${DATA.updated.slice(11)}，全市共有 ${DATA.alerts.length} 条气象预警生效，其中红色 ${cnt.红色} 条、橙色 ${cnt.橙色} 条、黄色 ${cnt.黄色} 条、蓝色 ${cnt.蓝色} 条；`+
+    `涉及`+Object.entries(types).map(([k,v])=>`${k}${v}条`).join('、')+
+    `。中心城区实况 ${fmtT(cq.t)}℃、体感 ${fmtT(cq.feel)}℃，${tipTxt}。`;
+  document.getElementById('heroHeadline').textContent =
+    (HEADLINE[dom[0]] ? HEADLINE[dom[0]]() : `全市 ${DATA.alerts.length} 条气象预警生效中，请注意防范`);
+  document.getElementById('headlineTag').textContent =
+    `${dom[0]}${domLv}预警 · ${DATA.alerts.length}条预警生效中`;
+}
 
 /* ================= 滚动条 ================= */
 const tk = document.getElementById('tickerTrack');
 const tickHTML = DATA.alerts.map(a=>
   `<span class="tick-item"><i style="background:${LV_COLOR[a.level]||'#888'}"></i>${a.district?shortName(a.district):'重庆市'} · ${a.type}${a.level}预警 · ${a.time.slice(11,16)}</span>`
 ).join('');
-tk.innerHTML = tickHTML + tickHTML;
+tk.innerHTML = tickHTML
+  ? tickHTML + tickHTML
+  : '<span class="tick-item"><i style="background:#2c9e4b"></i>今日全市无生效气象预警，天气平稳</span>';
 
 /* ================= 预警统计与列表 ================= */
 document.getElementById('alertStats').innerHTML =
@@ -4159,5 +4195,6 @@ if (location.protocol.indexOf('http')===0){
   }).catch(()=>main());
 }else{ main(); }
 </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4655f3c58dd6497fb7ddb85b68480db7"}' crossorigin="anonymous"></script>
 </body>
 </html>
