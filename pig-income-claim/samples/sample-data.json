@@ -1,0 +1,349 @@
+{
+  "policy": {
+    "insuranceStart": "2026-01-01",
+    "insuranceEnd": "2026-12-31",
+    "insuredCount": 100,
+    "previousCount": 5
+  },
+  "target": {
+    "month": "2026-08",
+    "displayMonth": "2026年8月",
+    "price": 12.84,
+    "displayPrecision": 2,
+    "sourceName": "重庆市保险行业协会",
+    "sourceUrl": null,
+    "mode": "自动读取",
+    "status": "本地已确认数据（待补正式公告链接）"
+  },
+  "periods": [
+    {
+      "id": "period-1",
+      "start": "2026-07-01",
+      "end": "2026-07-15",
+      "quantity": 10,
+      "totalWeight": 1150
+    },
+    {
+      "id": "period-2",
+      "start": "2026-07-20",
+      "end": "2026-08-02",
+      "quantity": 20,
+      "totalWeight": 2500
+    }
+  ],
+  "calculation": {
+    "sortedPeriods": [
+      {
+        "id": "period-1",
+        "start": "2026-07-01",
+        "end": "2026-07-15",
+        "quantity": 10,
+        "totalWeight": 1150
+      },
+      {
+        "id": "period-2",
+        "start": "2026-07-20",
+        "end": "2026-08-02",
+        "quantity": 20,
+        "totalWeight": 2500
+      }
+    ],
+    "results": [
+      {
+        "id": "period-1",
+        "start": "2026-07-01",
+        "end": "2026-07-15",
+        "quantity": 10,
+        "totalWeight": 1150,
+        "target": {
+          "month": "2026-08",
+          "displayMonth": "2026年8月",
+          "price": 12.84,
+          "displayPrecision": 2,
+          "sourceName": "重庆市保险行业协会",
+          "sourceUrl": null,
+          "mode": "自动读取",
+          "status": "本地已确认数据（待补正式公告链接）"
+        },
+        "priceCoverage": {
+          "totalDays": 15,
+          "coveredDays": 15,
+          "missingDays": 0,
+          "missingDates": [],
+          "average": 11.814000000000004,
+          "complete": true,
+          "covered": [
+            {
+              "date": "2026-07-01",
+              "price": 11.4,
+              "week": 27,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260708_15807773.html"
+            },
+            {
+              "date": "2026-07-02",
+              "price": 11.4,
+              "week": 27,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260708_15807773.html"
+            },
+            {
+              "date": "2026-07-03",
+              "price": 11.4,
+              "week": 27,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260708_15807773.html"
+            },
+            {
+              "date": "2026-07-04",
+              "price": 11.4,
+              "week": 27,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260708_15807773.html"
+            },
+            {
+              "date": "2026-07-05",
+              "price": 11.4,
+              "week": 27,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260708_15807773.html"
+            },
+            {
+              "date": "2026-07-06",
+              "price": 12.18,
+              "week": 28,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260715_15824679.html"
+            },
+            {
+              "date": "2026-07-07",
+              "price": 12.18,
+              "week": 28,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260715_15824679.html"
+            },
+            {
+              "date": "2026-07-08",
+              "price": 12.18,
+              "week": 28,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260715_15824679.html"
+            },
+            {
+              "date": "2026-07-09",
+              "price": 12.18,
+              "week": 28,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260715_15824679.html"
+            },
+            {
+              "date": "2026-07-10",
+              "price": 12.18,
+              "week": 28,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260715_15824679.html"
+            },
+            {
+              "date": "2026-07-11",
+              "price": 12.18,
+              "week": 28,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260715_15824679.html"
+            },
+            {
+              "date": "2026-07-12",
+              "price": 12.18,
+              "week": 28,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260715_15824679.html"
+            },
+            {
+              "date": "2026-07-13",
+              "price": 11.65,
+              "week": 29,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260721_15836985.html"
+            },
+            {
+              "date": "2026-07-14",
+              "price": 11.65,
+              "week": 29,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260721_15836985.html"
+            },
+            {
+              "date": "2026-07-15",
+              "price": 11.65,
+              "week": 29,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260721_15836985.html"
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260708_15807773.html",
+              "title": "重庆农产品及农资价格周报2026年第27期"
+            },
+            {
+              "url": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260715_15824679.html",
+              "title": "重庆农产品及农资价格周报2026年第28期"
+            },
+            {
+              "url": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260721_15836985.html",
+              "title": "重庆农产品及农资价格周报2026年第29期"
+            }
+          ]
+        },
+        "actualPrice": 11.814000000000004,
+        "priceDifference": 1.0259999999999962,
+        "band": {
+          "level": 3,
+          "label": "第三档",
+          "rate": 0.55,
+          "deduction": 0.225
+        },
+        "averageWeight": 115,
+        "claimWeight": 115,
+        "formulaClaim": 39.01949999999977,
+        "finalClaim": 39.01949999999977,
+        "capped": false,
+        "totalClaim": 390.19,
+        "triggered": true
+      },
+      {
+        "id": "period-2",
+        "start": "2026-07-20",
+        "end": "2026-08-02",
+        "quantity": 20,
+        "totalWeight": 2500,
+        "target": {
+          "month": "2026-08",
+          "displayMonth": "2026年8月",
+          "price": 12.84,
+          "displayPrecision": 2,
+          "sourceName": "重庆市保险行业协会",
+          "sourceUrl": null,
+          "mode": "自动读取",
+          "status": "本地已确认数据（待补正式公告链接）"
+        },
+        "priceCoverage": {
+          "totalDays": 14,
+          "coveredDays": 14,
+          "missingDays": 0,
+          "missingDates": [],
+          "average": 11.549999999999999,
+          "complete": true,
+          "covered": [
+            {
+              "date": "2026-07-20",
+              "price": 11.46,
+              "week": 30,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260730_15872396.html"
+            },
+            {
+              "date": "2026-07-21",
+              "price": 11.46,
+              "week": 30,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260730_15872396.html"
+            },
+            {
+              "date": "2026-07-22",
+              "price": 11.46,
+              "week": 30,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260730_15872396.html"
+            },
+            {
+              "date": "2026-07-23",
+              "price": 11.46,
+              "week": 30,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260730_15872396.html"
+            },
+            {
+              "date": "2026-07-24",
+              "price": 11.46,
+              "week": 30,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260730_15872396.html"
+            },
+            {
+              "date": "2026-07-25",
+              "price": 11.46,
+              "week": 30,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260730_15872396.html"
+            },
+            {
+              "date": "2026-07-26",
+              "price": 11.46,
+              "week": 30,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260730_15872396.html"
+            },
+            {
+              "date": "2026-07-27",
+              "price": 11.64,
+              "week": 31,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260804_15890875.html"
+            },
+            {
+              "date": "2026-07-28",
+              "price": 11.64,
+              "week": 31,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260804_15890875.html"
+            },
+            {
+              "date": "2026-07-29",
+              "price": 11.64,
+              "week": 31,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260804_15890875.html"
+            },
+            {
+              "date": "2026-07-30",
+              "price": 11.64,
+              "week": 31,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260804_15890875.html"
+            },
+            {
+              "date": "2026-07-31",
+              "price": 11.64,
+              "week": 31,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260804_15890875.html"
+            },
+            {
+              "date": "2026-08-01",
+              "price": 11.64,
+              "week": 31,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260804_15890875.html"
+            },
+            {
+              "date": "2026-08-02",
+              "price": 11.64,
+              "week": 31,
+              "sourceUrl": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260804_15890875.html"
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202607/t20260730_15872396.html",
+              "title": "重庆农产品及农资价格周报2026年第30期"
+            },
+            {
+              "url": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260804_15890875.html",
+              "title": "重庆农产品及农资价格周报2026年第31期"
+            }
+          ]
+        },
+        "actualPrice": 11.549999999999999,
+        "priceDifference": 1.290000000000001,
+        "band": {
+          "level": 3,
+          "label": "第三档",
+          "rate": 0.55,
+          "deduction": 0.225
+        },
+        "averageWeight": 125,
+        "claimWeight": 120,
+        "formulaClaim": 58.14000000000007,
+        "finalClaim": 58.14000000000007,
+        "capped": false,
+        "totalClaim": 1162.8,
+        "triggered": true
+      }
+    ],
+    "errors": [],
+    "valid": true,
+    "incompletePeriods": [],
+    "summary": {
+      "insuredCount": 100,
+      "previousCount": 5,
+      "currentCount": 30,
+      "cumulativeCount": 35,
+      "remainingCount": 65,
+      "currentClaims": 1552.99,
+      "liabilityLimit": 60000,
+      "theoreticalRemainingLiability": 39000
+    }
+  }
+}

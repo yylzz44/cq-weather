@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="重庆市育肥猪养殖收入保险赔款测算工具" />
+    <title>重庆市育肥猪养殖收入保险赔款测算</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <header class="site-header no-print">
+      <div class="header-inner">
+        <div>
+          <p class="eyebrow">农业保险 · 内部业务测算工具</p>
+          <h1>重庆市育肥猪养殖收入保险赔款测算</h1>
+          <p class="header-subtitle">第一版仅测算“育肥猪养殖收入责任”，不涉及死亡责任和养殖成本补充责任。</p>
+        </div>
+        <div class="header-status" aria-label="工具状态">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>本地数据计算</span>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="page-shell">
+      <section class="print-only print-title">
+        <p>重庆市育肥猪养殖收入保险</p>
+        <h1>育肥猪养殖收入保险赔款测算单</h1>
+        <p>计算时间：<span data-printed-at>—</span></p>
+      </section>
+
+      <section class="tool-notice" aria-label="使用提示">
+        <div class="notice-icon" aria-hidden="true">i</div>
+        <div>
+          <strong>测算口径提示</strong>
+          <p>目标价格以保单特别约定固定的行业协会公告月份为准；销售期起止日均计入，按每个自然日对应的农委待宰活猪收购均价计算。</p>
+        </div>
+      </section>
+
+      <div id="data-load-alert" class="alert alert-error" role="alert" hidden></div>
+
+      <section class="card" aria-labelledby="policy-heading">
+        <div class="section-heading">
+          <div class="step-number">01</div>
+          <div>
+            <p class="section-kicker">保单层面</p>
+            <h2 id="policy-heading">保单基本信息</h2>
+          </div>
+        </div>
+        <div class="form-grid four-columns">
+          <label class="field">
+            <span>保险起期 <em>必填</em></span>
+            <input id="insurance-start" type="date" autocomplete="off" />
+          </label>
+          <label class="field">
+            <span>保险止期 <em>必填</em></span>
+            <input id="insurance-end" type="date" autocomplete="off" />
+          </label>
+          <label class="field">
+            <span>保单承保数量 <em>必填</em></span>
+            <div class="input-with-unit"><input id="insured-count" type="number" min="1" step="1" inputmode="numeric" /><span>头</span></div>
+          </label>
+          <label class="field">
+            <span>此前已纳入赔款计算数量</span>
+            <div class="input-with-unit"><input id="previous-count" type="number" min="0" step="1" value="0" inputmode="numeric" /><span>头</span></div>
+          </label>
+        </div>
+        <p class="field-help">“此前已纳入赔款计算数量”是指本次测算前，该保单其他销售期已经计算收入责任赔款的育肥猪数量。</p>
+      </section>
+
+      <section class="card" aria-labelledby="target-heading">
+        <div class="section-heading heading-with-badge">
+          <div class="section-heading-main">
+            <div class="step-number">02</div>
+            <div>
+              <p class="section-kicker">保单固定参数</p>
+              <h2 id="target-heading">目标价格设置</h2>
+            </div>
+          </div>
+          <span class="fixed-badge">同一保单全部销售期共用</span>
+        </div>
+
+        <fieldset class="mode-switch no-print">
+          <legend>目标价格获取方式</legend>
+          <label><input type="radio" name="target-mode" value="auto" checked /><span>自动读取</span></label>
+          <label><input type="radio" name="target-mode" value="manual" /><span>手动录入</span></label>
+        </fieldset>
+
+        <div id="auto-target-panel">
+          <div class="target-layout">
+            <label class="field target-month-field">
+              <span>本保单特别约定采用哪一个月份的目标价格？ <em>必填</em></span>
+              <select id="target-month"></select>
+            </label>
+            <div id="target-source-card" class="target-source-card" aria-live="polite">
+              <div>
+                <p>当前目标价格</p>
+                <strong id="auto-target-price">—</strong>
+                <span>元/公斤</span>
+              </div>
+              <dl>
+                <div><dt>来源</dt><dd id="auto-target-source">—</dd></div>
+                <div><dt>公告日期</dt><dd id="auto-target-date">—</dd></div>
+                <div><dt>数据状态</dt><dd id="auto-target-status">—</dd></div>
+              </dl>
+              <a id="auto-target-link" class="source-link" href="#" target="_blank" rel="noreferrer" hidden>查看正式公告</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="manual-target-panel" hidden>
+          <div class="form-grid two-columns">
+            <label class="field">
+              <span>目标价格对应年月 <em>必填</em></span>
+              <input id="manual-target-month" type="month" value="2026-08" />
+            </label>
+            <label class="field">
+              <span>目标价格 <em>必填</em></span>
+              <div class="input-with-unit"><input id="manual-target-price" type="number" min="0.0001" step="0.01" inputmode="decimal" /><span>元/公斤</span></div>
+            </label>
+            <label class="field">
+              <span>公告发布日期（选填）</span>
+              <input id="manual-target-date" type="date" />
+            </label>
+            <label class="field">
+              <span>公告链接或备注（选填）</span>
+              <input id="manual-target-note" type="text" maxlength="300" placeholder="可粘贴公告链接或填写复核备注" />
+            </label>
+          </div>
+          <div class="alert alert-warning compact-alert">
+            本次目标价格为用户手动录入，仅用于当前页面本次测算，不会写入或覆盖公共目标价格数据文件。
+          </div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="period-heading">
+        <div class="section-heading heading-with-action">
+          <div class="section-heading-main">
+            <div class="step-number">03</div>
+            <div>
+              <p class="section-kicker">可录入多个</p>
+              <h2 id="period-heading">约定销售期</h2>
+            </div>
+          </div>
+          <button id="add-period" class="button button-secondary no-print" type="button"><span aria-hidden="true">＋</span>新增销售期</button>
+        </div>
+
+        <div class="fixed-parameter"><span>每头约定出栏重量</span><strong>120</strong><span>公斤/头（方案固定）</span></div>
+        <p class="field-help">销售期不要求是完整自然月；开始日期和结束日期都计入。多个销售期将在计算时按开始日期自动排序。</p>
+        <div id="period-list" class="period-list"></div>
+      </section>
+
+      <section class="action-bar no-print" aria-label="测算操作">
+        <div>
+          <strong>信息填写完成后开始测算</strong>
+          <span>系统会同步检查日期、数据完整性、数量和责任限额。</span>
+        </div>
+        <div class="action-buttons">
+          <button id="reset-all" class="button button-ghost" type="button">重置</button>
+          <button id="calculate" class="button button-primary" type="button">开始测算</button>
+        </div>
+      </section>
+
+      <section id="result-section" class="results" hidden aria-labelledby="result-heading">
+        <div id="result-status" class="result-status" role="status"></div>
+        <div id="validation-messages"></div>
+
+        <div class="results-heading">
+          <div>
+            <p class="section-kicker">计算结果</p>
+            <h2 id="result-heading">销售期赔款测算明细</h2>
+          </div>
+          <button id="print-result" class="button button-secondary no-print" type="button">打印 / 导出PDF</button>
+        </div>
+
+        <div id="period-results" class="period-results"></div>
+
+        <section class="summary-section" aria-labelledby="summary-heading">
+          <div class="summary-title">
+            <div>
+              <p class="section-kicker">保单层面</p>
+              <h2 id="summary-heading">多销售期汇总</h2>
+            </div>
+            <div class="claim-total"><span>当前页面累计赔款</span><strong id="summary-current-claims">0.00</strong><span>元</span></div>
+          </div>
+
+          <div class="table-scroll">
+            <table class="summary-table">
+              <thead>
+                <tr>
+                  <th>序号</th><th>销售期</th><th>出栏数量</th><th>实际价格</th><th>价差</th><th>每头赔款</th><th>销售期赔款</th><th>数据状态</th>
+                </tr>
+              </thead>
+              <tbody id="summary-table-body"></tbody>
+            </table>
+          </div>
+
+          <div id="summary-cards" class="summary-cards"></div>
+          <p class="summary-note">理论剩余责任限额按“剩余可纳入赔款计算数量 × 600元/头”计算，不代替财务系统中已赔金额核对。</p>
+        </section>
+
+        <section class="calculation-basis" aria-labelledby="basis-heading">
+          <h2 id="basis-heading">计算依据与使用说明</h2>
+          <div class="basis-grid">
+            <div><strong>实际价格</strong><p>销售期内每个自然日对应的待宰活猪收购价之和 ÷ 自然日总天数。</p></div>
+            <div><strong>赔款计算重量</strong><p>实际平均出栏重量与120公斤之间的较小值。</p></div>
+            <div><strong>精度</strong><p>每头赔款保留完整精度，乘以实际出栏数量后，销售期总赔款保留两位小数。</p></div>
+            <div><strong>责任限额</strong><p>收入责任每头赔款最高600元；累计数量不得超过保单承保数量。</p></div>
+          </div>
+          <div id="manual-print-warning" class="alert alert-warning" hidden>
+            本次测算目标价格为用户手动录入，请根据保单特别约定及行业协会正式公告进行复核。
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>数据来源</strong>
+        <span>重庆市农业农村委员会 · 重庆市保险行业协会</span>
+      </div>
+      <p>本工具用于业务测算和过程复核，正式理赔结论以保险合同、特别约定、正式公告及理赔审核资料为准。</p>
+    </footer>
+
+    <template id="period-template">
+      <article class="period-card" data-period-card>
+        <div class="period-card-header">
+          <div>
+            <span class="period-order">销售期</span>
+            <h3 data-period-title>约定销售期</h3>
+          </div>
+          <div class="period-actions no-print">
+            <button type="button" data-action="copy">复制</button>
+            <button type="button" data-action="clear">清空</button>
+            <button type="button" data-action="delete" class="danger-action">删除</button>
+          </div>
+        </div>
+        <div class="form-grid four-columns">
+          <label class="field"><span>开始日期 <em>必填</em></span><input data-field="start" type="date" /></label>
+          <label class="field"><span>结束日期 <em>必填</em></span><input data-field="end" type="date" /></label>
+          <label class="field"><span>实际出栏数量 <em>必填</em></span><div class="input-with-unit"><input data-field="quantity" type="number" min="1" step="1" inputmode="numeric" /><span>头</span></div></label>
+          <label class="field"><span>实际出栏总重量 <em>必填</em></span><div class="input-with-unit"><input data-field="totalWeight" type="number" min="0.01" step="0.01" inputmode="decimal" /><span>公斤</span></div></label>
+        </div>
+        <div class="period-inline-summary">
+          <span>自然日：<strong data-days>—</strong></span>
+          <span>实际平均出栏重量：<strong data-average-weight>—</strong></span>
+        </div>
+      </article>
+    </template>
+
+    <script type="module" src="./assets/js/app.js"></script>
+  </body>
+</html>
