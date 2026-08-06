@@ -2,10 +2,11 @@
 """从重庆市农业农村委《重庆农产品及农资价格周报》提取生猪本周均价。
 
 唯一取数口径：周报“肉禽蛋价格及比较”图片表格中，“生猪”行与
-“本周均价（元/公斤）”列交叉处的数值。提取后再与正文公布的
-生猪收购价环比变化交叉校验。
+“本周均价（元/公斤）”列交叉处的数值。正文公布的生猪收购价
+环比变化只用于日志提示，不得否决从图片中识别出的价格。
 
-任何无法唯一识别或无法通过校验的数据只写入日志，不写入JSON。
+已经写入JSON的年份和期次会在读取周报正文、下载图片和OCR之前跳过。
+任何无法唯一识别的数据只写入日志，不写入JSON。
 """
 
 from __future__ import annotations
@@ -34,6 +35,9 @@ USER_AGENT = "pig-income-claim-price-updater/1.0 (+GitHub Actions)"
 TIMEOUT = 30
 PRICE_MIN = 5.0
 PRICE_MAX = 40.0
+# 环比只作提示。该阈值仅决定是否在日志中提示“与环比反推值不一致”，
+# 不影响图片价格写入。
+CHANGE_WARNING_TOLERANCE = 0.015
 
 
 class PageParser(HTMLParser):
@@ -97,7 +101,7 @@ def normalize_url(base: str, value: str) -> str:
     return urllib.parse.urljoin(base, value)
 
 
-def discover_articles() -> list[str]:
+def discover_articles() -> list[tuple[str, str]]:
     discovered: dict[str, str] = {}
     for list_url in LIST_URLS:
         try:
@@ -111,7 +115,7 @@ def discover_articles() -> list[str]:
             url = normalize_url(list_url, href)
             if "/sczx/" in url:
                 discovered[url] = title
-    return sorted(discovered)
+    return sorted(discovered.items())
 
 
 def parse_title(text: str) -> tuple[int, int, str] | None:
@@ -262,17 +266,20 @@ def previous_record(records: list[dict], year: int, week: int) -> dict | None:
 
 
 def validate_ocr_price(price: float, confidence: float, change: tuple[str, float] | None, previous: dict | None) -> bool:
+    """检查OCR本身是否可信；环比只写日志，绝不否决图片价格。"""
     if confidence < 55:
         logging.warning("OCR平均置信度不足：%.1f", confidence)
         return False
-    if not change or not previous:
-        return confidence >= 80
-    previous_price = float(previous["pig_purchase_price"])
-    direction, percent = change
-    expected = previous_price * (1 + percent / 100 if direction == "up" else 1 - percent / 100)
-    if round(expected + 1e-10, 2) != round(price, 2):
-        logging.warning("OCR价格%.2f未通过环比交叉校验；按上期%.2f和%.2f%%推算为%.2f", price, previous_price, percent, expected)
-        return False
+    if change and previous:
+        previous_price = float(previous["pig_purchase_price"])
+        direction, percent = change
+        expected = previous_price * (1 + percent / 100 if direction == "up" else 1 - percent / 100)
+        if abs(expected - price) > CHANGE_WARNING_TOLERANCE:
+            logging.warning(
+                "图片价格%.2f与环比反推值%.2f不一致；仍以图片“生猪—本周均价”为准写入",
+                price,
+                expected,
+            )
     return True
 
 
@@ -298,7 +305,7 @@ def extract_article(article_url: str, existing_records: list[dict]) -> dict | No
     previous = previous_record(existing_records, year, week)
     if not validate_ocr_price(price, confidence, change, previous):
         return None
-    extraction = f"图片OCR读取“生猪—本周均价”并环比交叉校验（置信度{confidence:.1f}）"
+    extraction = f"图片OCR读取“生猪—本周均价”（置信度{confidence:.1f}；环比仅作提示）"
     logging.info("OCR命中“生猪”行：%s", ocr_line)
 
     now = dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).isoformat(timespec="seconds")
@@ -342,10 +349,25 @@ def main() -> int:
     payload = load_payload(weekly_path)
     records = list(payload.get("records", []))
     known = {(int(record["year"]), int(record["week"])) for record in records}
-    article_urls = args.article_url or discover_articles()
+    known_urls = {str(record.get("source_url", "")) for record in records}
+    article_candidates = (
+        [(article_url, "") for article_url in args.article_url]
+        if args.article_url
+        else discover_articles()
+    )
     added = []
 
-    for article_url in article_urls:
+    for article_url, listed_title in article_candidates:
+        # 已核验并写入JSON的周报无需再次读取正文、下载图片和运行OCR。
+        # 同时按URL和列表页标题中的“年份+期次”判断，避免链接形式变化后
+        # 对同一期数据重复抓取。
+        if article_url in known_urls:
+            logging.info("跳过已入库周报：%s", listed_title or article_url)
+            continue
+        listed_title_info = parse_title(listed_title)
+        if listed_title_info and (listed_title_info[0], listed_title_info[1]) in known:
+            logging.info("跳过已入库期次：%s", listed_title_info[2])
+            continue
         try:
             record = extract_article(article_url, records + added)
         except Exception as exc:  # noqa: BLE001
@@ -358,7 +380,7 @@ def main() -> int:
         logging.info("新增第%s周：%.2f元/公斤", record["week"], record["pig_purchase_price"])
 
     if not added:
-        logging.info("没有通过校验的新周报数据，JSON未修改。")
+        logging.info("没有需要新增的周报数据，JSON未修改。")
         return 0
 
     records.extend(added)
