@@ -1,0 +1,44 @@
+name: 更新育肥猪待宰活猪价格
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 0 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出网站文件
+        uses: actions/checkout@v4
+
+      - name: 准备Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 安装中文OCR
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-chi-sim
+
+      - name: 检查新周报
+        working-directory: pig-income-claim
+        run: python scripts/fetch_pig_weekly_prices.py
+
+      - name: 重新生成每日价格
+        working-directory: pig-income-claim
+        run: python scripts/build_daily_prices.py --year 2026
+
+      - name: 提交发生变化的数据
+        run: |
+          if git diff --quiet -- pig-income-claim/data; then
+            echo "没有新数据"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pig-income-claim/data
+          git commit -m "data: 更新育肥猪待宰活猪价格"
+          git push
