@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "data_source": "重庆市保险行业协会",
-  "updated_at": "2026-08-05T00:00:00+08:00",
+  "updated_at": "2026-08-06T00:00:00+08:00",
   "records": [
     {
       "month": "2026-08",
@@ -9,12 +9,25 @@
       "target_price": 12.84,
       "display_precision": 2,
       "unit": "元/公斤",
-      "announcement_date": null,
-      "announcement_title": "2026年8月育肥猪养殖收入保险目标价格",
+      "announcement_date": "2026-08-05",
+      "announcement_title": "2026年8月重庆市育肥猪养殖收入保险目标价格公告",
       "source_url": null,
       "source_name": "重庆市保险行业协会",
-      "status": "本地已确认数据（待补正式公告链接）",
+      "status": "行业协会已发布（待补正式公告链接）",
       "note": "按行业协会正式公告显示精度使用12.84元/公斤，不使用测算底层未发布精度。"
+    },
+    {
+      "month": "2026-07",
+      "display_month": "2026年7月",
+      "target_price": 12.63,
+      "display_precision": 2,
+      "unit": "元/公斤",
+      "announcement_date": "2026-07-29",
+      "announcement_title": "2026年7月重庆市育肥猪养殖收入保险目标价格公告",
+      "source_url": null,
+      "source_name": "重庆市保险行业协会",
+      "status": "行业协会已发布（待补正式公告链接）",
+      "note": "按行业协会正式公告显示精度使用12.63元/公斤。"
     }
   ]
 }
