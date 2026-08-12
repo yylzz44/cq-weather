@@ -3,8 +3,8 @@
   "data_source": "重庆市农业农村委员会",
   "price_name": "待宰活猪收购均价",
   "mapping_rule": "每一期周报价格映射至监测周全部自然日；起止日均计入；缺失不得估算或顺延。",
-  "updated_at": "2026-08-11T10:36:29+08:00",
-  "latest_verified_week": 31,
+  "updated_at": "2026-08-12T11:05:43+08:00",
+  "latest_verified_week": 32,
   "records": [
     {
       "date": "2026-01-01",
@@ -2149,72 +2149,72 @@
     {
       "date": "2026-08-03",
       "year": 2026,
-      "week": null,
-      "price": null,
+      "week": 32,
+      "price": 11.86,
       "unit": "元/公斤",
-      "source_url": null,
-      "source_title": null,
-      "status": "待更新"
+      "source_url": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260811_15917931.html",
+      "source_title": "重庆农产品及农资价格周报2026年第32期",
+      "status": "已核验"
     },
     {
       "date": "2026-08-04",
       "year": 2026,
-      "week": null,
-      "price": null,
+      "week": 32,
+      "price": 11.86,
       "unit": "元/公斤",
-      "source_url": null,
-      "source_title": null,
-      "status": "待更新"
+      "source_url": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260811_15917931.html",
+      "source_title": "重庆农产品及农资价格周报2026年第32期",
+      "status": "已核验"
     },
     {
       "date": "2026-08-05",
       "year": 2026,
-      "week": null,
-      "price": null,
+      "week": 32,
+      "price": 11.86,
       "unit": "元/公斤",
-      "source_url": null,
-      "source_title": null,
-      "status": "待更新"
+      "source_url": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260811_15917931.html",
+      "source_title": "重庆农产品及农资价格周报2026年第32期",
+      "status": "已核验"
     },
     {
       "date": "2026-08-06",
       "year": 2026,
-      "week": null,
-      "price": null,
+      "week": 32,
+      "price": 11.86,
       "unit": "元/公斤",
-      "source_url": null,
-      "source_title": null,
-      "status": "待更新"
+      "source_url": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260811_15917931.html",
+      "source_title": "重庆农产品及农资价格周报2026年第32期",
+      "status": "已核验"
     },
     {
       "date": "2026-08-07",
       "year": 2026,
-      "week": null,
-      "price": null,
+      "week": 32,
+      "price": 11.86,
       "unit": "元/公斤",
-      "source_url": null,
-      "source_title": null,
-      "status": "待更新"
+      "source_url": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260811_15917931.html",
+      "source_title": "重庆农产品及农资价格周报2026年第32期",
+      "status": "已核验"
     },
     {
       "date": "2026-08-08",
       "year": 2026,
-      "week": null,
-      "price": null,
+      "week": 32,
+      "price": 11.86,
       "unit": "元/公斤",
-      "source_url": null,
-      "source_title": null,
-      "status": "待更新"
+      "source_url": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260811_15917931.html",
+      "source_title": "重庆农产品及农资价格周报2026年第32期",
+      "status": "已核验"
     },
     {
       "date": "2026-08-09",
       "year": 2026,
-      "week": null,
-      "price": null,
+      "week": 32,
+      "price": 11.86,
       "unit": "元/公斤",
-      "source_url": null,
-      "source_title": null,
-      "status": "待更新"
+      "source_url": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202608/t20260811_15917931.html",
+      "source_title": "重庆农产品及农资价格周报2026年第32期",
+      "status": "已核验"
     },
     {
       "date": "2026-08-10",
