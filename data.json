@@ -1,44 +1,35 @@
 {
- "updated": "2026-08-20 18:00",
- "city_pub": "2026-08-20 20:00",
+ "updated": "2026-08-21 07:48",
+ "city_pub": "2026-08-21 08:00",
  "districts": [
   {
    "n": "万州区",
    "st": "万州",
-   "t": 27.5,
-   "feel": 31.5,
-   "hum": 81.0,
+   "t": 24.3,
+   "feel": 27.3,
+   "hum": 99.0,
    "info": "多云",
    "rain": 0.0,
    "wind_d": "东北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "多云",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
-     "day_t": "31",
-     "night_info": "多云",
+     "day_t": "30",
+     "night_info": "晴",
      "night_t": "24",
-     "wind_d": "西风",
+     "wind_d": "西北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
-     "day_info": "多云",
+     "day_info": "晴",
      "day_t": "33",
-     "night_info": "多云",
+     "night_info": "晴",
      "night_t": "24",
-     "wind_d": "东北风",
+     "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
@@ -53,19 +44,19 @@
     {
      "date": "2026-08-24",
      "day_info": "晴",
-     "day_t": "34",
+     "day_t": "35",
      "night_info": "晴",
      "night_t": "24",
-     "wind_d": "西风",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "34",
+     "day_info": "晴",
+     "day_t": "35",
      "night_info": "晴",
      "night_t": "24",
-     "wind_d": "东风",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
@@ -74,7 +65,16 @@
      "day_t": "34",
      "night_info": "多云",
      "night_t": "24",
-     "wind_d": "北风",
+     "wind_d": "东北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "34",
+     "night_info": "多云",
+     "night_t": "24",
+     "wind_d": "东北风",
      "wind_p": "微风"
     }
    ]
@@ -82,76 +82,76 @@
   {
    "n": "涪陵区",
    "st": "涪陵",
-   "t": 28.5,
-   "feel": 31.5,
-   "hum": 76.0,
+   "t": 25.0,
+   "feel": 29.7,
+   "hum": 96.0,
    "info": "多云",
    "rain": 0.0,
-   "wind_d": "西北风",
-   "wind_p": "3级",
-   "pub": "2026-08-20 17:30",
+   "wind_d": "西南风",
+   "wind_p": "微风",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "25",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
      "day_t": "33",
-     "night_info": "多云",
-     "night_t": "25",
-     "wind_d": "西风",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
-     "day_t": "33",
-     "night_info": "多云",
+     "day_t": "34",
+     "night_info": "晴",
      "night_t": "25",
-     "wind_d": "东风",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
-     "day_info": "晴",
-     "day_t": "34",
+     "day_info": "多云",
+     "day_t": "35",
      "night_info": "晴",
-     "night_t": "26",
-     "wind_d": "西北风",
+     "night_t": "25",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
      "day_info": "晴",
      "day_t": "34",
-     "night_info": "多云",
-     "night_t": "25",
-     "wind_d": "西风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "34",
-     "night_info": "阴",
+     "night_info": "晴",
      "night_t": "25",
      "wind_d": "西北风",
      "wind_p": "微风"
     },
     {
+     "date": "2026-08-25",
+     "day_info": "小雨",
+     "day_t": "34",
+     "night_info": "小雨",
+     "night_t": "25",
+     "wind_d": "西南风",
+     "wind_p": "微风"
+    },
+    {
      "date": "2026-08-26",
      "day_info": "多云",
-     "day_t": "35",
+     "day_t": "34",
      "night_info": "多云",
      "night_t": "25",
-     "wind_d": "北风",
+     "wind_d": "西北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "34",
+     "night_info": "多云",
+     "night_t": "25",
+     "wind_d": "南风",
      "wind_p": "微风"
     }
    ]
@@ -159,76 +159,76 @@
   {
    "n": "渝中区",
    "st": "重庆",
-   "t": 33.8,
-   "feel": 37.1,
-   "hum": 51.0,
-   "info": "晴",
+   "t": 27.4,
+   "feel": 32.5,
+   "hum": 85.0,
+   "info": "多云",
    "rain": 0.0,
-   "wind_d": "东北风",
+   "wind_d": "西北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "26",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
-     "day_t": "32",
+     "day_t": "34",
      "night_info": "多云",
-     "night_t": "26",
-     "wind_d": "东风",
+     "night_t": "27",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
-     "day_t": "34",
-     "night_info": "多云",
-     "night_t": "27",
-     "wind_d": "东北风",
+     "day_t": "35",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
      "day_info": "多云",
-     "day_t": "35",
+     "day_t": "34",
      "night_info": "晴",
-     "night_t": "28",
-     "wind_d": "南风",
+     "night_t": "26",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "晴",
+     "day_info": "小雨",
      "day_t": "35",
-     "night_info": "晴",
-     "night_t": "27",
+     "night_info": "中雨",
+     "night_t": "26",
      "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "36",
+     "day_info": "小雨",
+     "day_t": "35",
      "night_info": "小雨",
      "night_t": "27",
-     "wind_d": "南风",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
      "day_info": "多云",
+     "day_t": "35",
+     "night_info": "多云",
+     "night_t": "28",
+     "wind_d": "南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
      "day_t": "36",
-     "night_info": "小雨",
-     "night_t": "27",
-     "wind_d": "西南风",
+     "night_info": "多云",
+     "night_t": "28",
+     "wind_d": "南风",
      "wind_p": "微风"
     }
    ]
@@ -236,76 +236,76 @@
   {
    "n": "大渡口区",
    "st": "重庆",
-   "t": 33.8,
-   "feel": 37.1,
-   "hum": 51.0,
-   "info": "晴",
+   "t": 27.4,
+   "feel": 32.5,
+   "hum": 85.0,
+   "info": "多云",
    "rain": 0.0,
-   "wind_d": "东北风",
+   "wind_d": "西北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "26",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
-     "day_t": "32",
+     "day_t": "34",
      "night_info": "多云",
-     "night_t": "26",
-     "wind_d": "东风",
+     "night_t": "27",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
-     "day_t": "34",
-     "night_info": "多云",
-     "night_t": "27",
-     "wind_d": "东北风",
+     "day_t": "35",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
      "day_info": "多云",
-     "day_t": "35",
+     "day_t": "34",
      "night_info": "晴",
-     "night_t": "28",
-     "wind_d": "南风",
+     "night_t": "26",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "晴",
+     "day_info": "小雨",
      "day_t": "35",
-     "night_info": "晴",
-     "night_t": "27",
+     "night_info": "中雨",
+     "night_t": "26",
      "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "36",
+     "day_info": "小雨",
+     "day_t": "35",
      "night_info": "小雨",
      "night_t": "27",
-     "wind_d": "南风",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
      "day_info": "多云",
+     "day_t": "35",
+     "night_info": "多云",
+     "night_t": "28",
+     "wind_d": "南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
      "day_t": "36",
-     "night_info": "小雨",
-     "night_t": "27",
-     "wind_d": "西南风",
+     "night_info": "多云",
+     "night_t": "28",
+     "wind_d": "南风",
      "wind_p": "微风"
     }
    ]
@@ -313,76 +313,76 @@
   {
    "n": "江北区",
    "st": "重庆",
-   "t": 33.8,
-   "feel": 37.1,
-   "hum": 51.0,
-   "info": "晴",
+   "t": 27.4,
+   "feel": 32.5,
+   "hum": 85.0,
+   "info": "多云",
    "rain": 0.0,
-   "wind_d": "东北风",
+   "wind_d": "西北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "26",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
-     "day_t": "32",
+     "day_t": "34",
      "night_info": "多云",
-     "night_t": "26",
-     "wind_d": "东风",
+     "night_t": "27",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
-     "day_t": "34",
-     "night_info": "多云",
-     "night_t": "27",
-     "wind_d": "东北风",
+     "day_t": "35",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
      "day_info": "多云",
-     "day_t": "35",
+     "day_t": "34",
      "night_info": "晴",
-     "night_t": "28",
-     "wind_d": "南风",
+     "night_t": "26",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "晴",
+     "day_info": "小雨",
      "day_t": "35",
-     "night_info": "晴",
-     "night_t": "27",
+     "night_info": "中雨",
+     "night_t": "26",
      "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "36",
+     "day_info": "小雨",
+     "day_t": "35",
      "night_info": "小雨",
      "night_t": "27",
-     "wind_d": "南风",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
      "day_info": "多云",
+     "day_t": "35",
+     "night_info": "多云",
+     "night_t": "28",
+     "wind_d": "南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
      "day_t": "36",
-     "night_info": "小雨",
-     "night_t": "27",
-     "wind_d": "西南风",
+     "night_info": "多云",
+     "night_t": "28",
+     "wind_d": "南风",
      "wind_p": "微风"
     }
    ]
@@ -390,76 +390,76 @@
   {
    "n": "沙坪坝区",
    "st": "沙坪坝",
-   "t": 33.8,
-   "feel": 37.1,
-   "hum": 51.0,
-   "info": "晴",
+   "t": 27.4,
+   "feel": 32.5,
+   "hum": 85.0,
+   "info": "多云",
    "rain": 0.0,
-   "wind_d": "东北风",
+   "wind_d": "西北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "26",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
-     "day_t": "32",
+     "day_t": "34",
      "night_info": "多云",
-     "night_t": "26",
-     "wind_d": "东风",
+     "night_t": "27",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
-     "day_t": "34",
-     "night_info": "多云",
-     "night_t": "27",
-     "wind_d": "东北风",
+     "day_t": "35",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
      "day_info": "多云",
-     "day_t": "35",
+     "day_t": "34",
      "night_info": "晴",
-     "night_t": "28",
-     "wind_d": "南风",
+     "night_t": "26",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "晴",
+     "day_info": "小雨",
      "day_t": "35",
-     "night_info": "晴",
-     "night_t": "27",
+     "night_info": "中雨",
+     "night_t": "26",
      "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "36",
+     "day_info": "小雨",
+     "day_t": "35",
      "night_info": "小雨",
      "night_t": "27",
-     "wind_d": "南风",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
      "day_info": "多云",
+     "day_t": "35",
+     "night_info": "多云",
+     "night_t": "28",
+     "wind_d": "南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
      "day_t": "36",
-     "night_info": "小雨",
-     "night_t": "27",
-     "wind_d": "西南风",
+     "night_info": "多云",
+     "night_t": "28",
+     "wind_d": "南风",
      "wind_p": "微风"
     }
    ]
@@ -467,76 +467,76 @@
   {
    "n": "九龙坡区",
    "st": "重庆",
-   "t": 33.8,
-   "feel": 37.1,
-   "hum": 51.0,
-   "info": "晴",
+   "t": 27.4,
+   "feel": 32.5,
+   "hum": 85.0,
+   "info": "多云",
    "rain": 0.0,
-   "wind_d": "东北风",
+   "wind_d": "西北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "26",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
-     "day_t": "32",
+     "day_t": "34",
      "night_info": "多云",
-     "night_t": "26",
-     "wind_d": "东风",
+     "night_t": "27",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
-     "day_t": "34",
-     "night_info": "多云",
-     "night_t": "27",
-     "wind_d": "东北风",
+     "day_t": "35",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
      "day_info": "多云",
-     "day_t": "35",
+     "day_t": "34",
      "night_info": "晴",
-     "night_t": "28",
-     "wind_d": "南风",
+     "night_t": "26",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "晴",
+     "day_info": "小雨",
      "day_t": "35",
-     "night_info": "晴",
-     "night_t": "27",
+     "night_info": "中雨",
+     "night_t": "26",
      "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "36",
+     "day_info": "小雨",
+     "day_t": "35",
      "night_info": "小雨",
      "night_t": "27",
-     "wind_d": "南风",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
      "day_info": "多云",
+     "day_t": "35",
+     "night_info": "多云",
+     "night_t": "28",
+     "wind_d": "南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
      "day_t": "36",
-     "night_info": "小雨",
-     "night_t": "27",
-     "wind_d": "西南风",
+     "night_info": "多云",
+     "night_t": "28",
+     "wind_d": "南风",
      "wind_p": "微风"
     }
    ]
@@ -544,39 +544,107 @@
   {
    "n": "南岸区",
    "st": "重庆",
-   "t": 33.8,
-   "feel": 37.1,
-   "hum": 51.0,
-   "info": "晴",
+   "t": 27.4,
+   "feel": 32.5,
+   "hum": 85.0,
+   "info": "多云",
    "rain": 0.0,
-   "wind_d": "东北风",
+   "wind_d": "西北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "26",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
-     "day_t": "32",
+     "day_t": "34",
      "night_info": "多云",
-     "night_t": "26",
-     "wind_d": "东风",
+     "night_t": "27",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
+     "day_t": "35",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "西风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-23",
+     "day_info": "多云",
      "day_t": "34",
-     "night_info": "多云",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-24",
+     "day_info": "小雨",
+     "day_t": "35",
+     "night_info": "中雨",
+     "night_t": "26",
+     "wind_d": "西南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-25",
+     "day_info": "小雨",
+     "day_t": "35",
+     "night_info": "小雨",
      "night_t": "27",
+     "wind_d": "西风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-26",
+     "day_info": "多云",
+     "day_t": "35",
+     "night_info": "多云",
+     "night_t": "28",
+     "wind_d": "南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "36",
+     "night_info": "多云",
+     "night_t": "28",
+     "wind_d": "南风",
+     "wind_p": "微风"
+    }
+   ]
+  },
+  {
+   "n": "北碚区",
+   "st": "北碚",
+   "t": 25.7,
+   "feel": 30.9,
+   "hum": 93.0,
+   "info": "多云",
+   "rain": 0.0,
+   "wind_d": null,
+   "wind_p": "微风",
+   "pub": "2026-08-21 07:20",
+   "fc": [
+    {
+     "date": "2026-08-21",
+     "day_info": "多云",
+     "day_t": "33",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "东北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-22",
+     "day_info": "多云",
+     "day_t": "35",
+     "night_info": "晴",
+     "night_t": "26",
      "wind_d": "东北风",
      "wind_p": "微风"
     },
@@ -585,112 +653,44 @@
      "day_info": "多云",
      "day_t": "35",
      "night_info": "晴",
-     "night_t": "28",
-     "wind_d": "南风",
+     "night_t": "25",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "晴",
-     "day_t": "35",
-     "night_info": "晴",
-     "night_t": "27",
-     "wind_d": "西南风",
+     "day_info": "小雨",
+     "day_t": "36",
+     "night_info": "小雨",
+     "night_t": "25",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
+     "day_info": "小雨",
      "day_t": "36",
      "night_info": "小雨",
-     "night_t": "27",
-     "wind_d": "南风",
+     "night_t": "26",
+     "wind_d": "西北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
      "day_info": "多云",
      "day_t": "36",
-     "night_info": "小雨",
-     "night_t": "27",
-     "wind_d": "西南风",
-     "wind_p": "微风"
-    }
-   ]
-  },
-  {
-   "n": "北碚区",
-   "st": "北碚",
-   "t": 33.1,
-   "feel": 37.0,
-   "hum": 55.0,
-   "info": "晴",
-   "rain": 0.0,
-   "wind_d": "西北风",
-   "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
-   "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
-    {
-     "date": "2026-08-21",
-     "day_info": "多云",
-     "day_t": "33",
-     "night_info": "晴",
-     "night_t": "25",
-     "wind_d": "东南风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-22",
-     "day_info": "多云",
-     "day_t": "35",
      "night_info": "多云",
      "night_t": "26",
-     "wind_d": "北风",
+     "wind_d": "南风",
      "wind_p": "微风"
     },
     {
-     "date": "2026-08-23",
+     "date": "2026-08-27",
      "day_info": "多云",
-     "day_t": "35",
-     "night_info": "晴",
-     "night_t": "27",
-     "wind_d": "西南风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-24",
-     "day_info": "晴",
      "day_t": "36",
-     "night_info": "晴",
+     "night_info": "多云",
      "night_t": "26",
-     "wind_d": "西南风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "37",
-     "night_info": "小雨",
-     "night_t": "26",
-     "wind_d": "西风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-26",
-     "day_info": "多云",
-     "day_t": "37",
-     "night_info": "小雨",
-     "night_t": "25",
-     "wind_d": "西风",
+     "wind_d": "南风",
      "wind_p": "微风"
     }
    ]
@@ -698,75 +698,75 @@
   {
    "n": "綦江区",
    "st": "綦江",
-   "t": 30.6,
-   "feel": 33.2,
-   "hum": 64.0,
+   "t": 24.3,
+   "feel": 27.4,
+   "hum": 96.0,
    "info": "多云",
    "rain": 0.0,
-   "wind_d": "东北风",
-   "wind_p": "3级",
-   "pub": "2026-08-20 17:30",
+   "wind_d": "东南风",
+   "wind_p": "微风",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "小雨",
-     "day_t": "31",
-     "night_info": "多云",
-     "night_t": "24",
-     "wind_d": "北风",
+     "day_t": "33",
+     "night_info": "小雨",
+     "night_t": "25",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
      "day_t": "32",
-     "night_info": "多云",
-     "night_t": "23",
-     "wind_d": "东风",
+     "night_info": "晴",
+     "night_t": "24",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
      "day_info": "多云",
-     "day_t": "33",
+     "day_t": "32",
      "night_info": "小雨",
-     "night_t": "25",
-     "wind_d": "北风",
+     "night_t": "23",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
      "day_info": "小雨",
-     "day_t": "33",
+     "day_t": "32",
      "night_info": "小雨",
      "night_t": "24",
-     "wind_d": "北风",
+     "wind_d": "西北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
      "day_info": "小雨",
-     "day_t": "33",
+     "day_t": "32",
      "night_info": "小雨",
      "night_t": "24",
-     "wind_d": "北风",
+     "wind_d": "西北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
-     "day_info": "多云",
-     "day_t": "34",
+     "day_info": "小雨",
+     "day_t": "33",
      "night_info": "多云",
-     "night_t": "25",
+     "night_t": "24",
+     "wind_d": "东北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "小雨",
+     "day_t": "33",
+     "night_info": "多云",
+     "night_t": "24",
      "wind_d": "东风",
      "wind_p": "微风"
     }
@@ -775,76 +775,76 @@
   {
    "n": "大足区",
    "st": "大足",
-   "t": 29.4,
-   "feel": 32.5,
-   "hum": 65.0,
-   "info": "多云",
+   "t": 25.0,
+   "feel": 27.7,
+   "hum": 82.0,
+   "info": "阴",
    "rain": 0.0,
-   "wind_d": "西北风",
+   "wind_d": "东北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "大雨",
-     "night_t": "23",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "小雨",
      "day_t": "29",
      "night_info": "小雨",
-     "night_t": "24",
-     "wind_d": "东南风",
+     "night_t": "23",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
      "day_t": "30",
-     "night_info": "多云",
-     "night_t": "24",
-     "wind_d": "东北风",
+     "night_info": "晴",
+     "night_t": "23",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
      "day_info": "多云",
-     "day_t": "32",
+     "day_t": "31",
      "night_info": "晴",
-     "night_t": "25",
-     "wind_d": "东南风",
+     "night_t": "24",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "多云",
-     "day_t": "32",
+     "day_info": "小雨",
+     "day_t": "33",
      "night_info": "小雨",
-     "night_t": "25",
-     "wind_d": "西风",
+     "night_t": "24",
+     "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
      "day_info": "多云",
      "day_t": "33",
-     "night_info": "小雨",
+     "night_info": "多云",
      "night_t": "25",
-     "wind_d": "东风",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
-     "day_info": "小雨",
-     "day_t": "32",
+     "day_info": "多云",
+     "day_t": "33",
      "night_info": "小雨",
      "night_t": "24",
-     "wind_d": "东北风",
+     "wind_d": "东南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "小雨",
+     "day_t": "33",
+     "night_info": "多云",
+     "night_t": "25",
+     "wind_d": "西南风",
      "wind_p": "微风"
     }
    ]
@@ -852,28 +852,19 @@
   {
    "n": "渝北区",
    "st": "两江新区",
-   "t": 31.5,
-   "feel": 35.5,
-   "hum": 59.0,
-   "info": "晴",
+   "t": 25.7,
+   "feel": 29.2,
+   "hum": 90.0,
+   "info": "多云",
    "rain": 0.0,
-   "wind_d": "西北风",
+   "wind_d": "东北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
-     "day_t": "31",
+     "day_t": "30",
      "night_info": "晴",
      "night_t": "25",
      "wind_d": "东风",
@@ -882,46 +873,55 @@
     {
      "date": "2026-08-22",
      "day_info": "多云",
-     "day_t": "33",
-     "night_info": "多云",
+     "day_t": "32",
+     "night_info": "晴",
      "night_t": "25",
-     "wind_d": "东南风",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
-     "day_info": "多云",
-     "day_t": "33",
-     "night_info": "多云",
-     "night_t": "27",
-     "wind_d": "南风",
+     "day_info": "晴",
+     "day_t": "32",
+     "night_info": "晴",
+     "night_t": "24",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "晴",
+     "day_info": "小雨",
      "day_t": "33",
-     "night_info": "晴",
+     "night_info": "小雨",
      "night_t": "25",
      "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "34",
+     "day_info": "小雨",
+     "day_t": "33",
      "night_info": "小雨",
      "night_t": "25",
-     "wind_d": "西南风",
+     "wind_d": "东南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
      "day_info": "多云",
      "day_t": "34",
-     "night_info": "小雨",
-     "night_t": "25",
-     "wind_d": "西风",
+     "night_info": "多云",
+     "night_t": "26",
+     "wind_d": "南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "34",
+     "night_info": "多云",
+     "night_t": "26",
+     "wind_d": "南风",
      "wind_p": "微风"
     }
    ]
@@ -929,55 +929,46 @@
   {
    "n": "巴南区",
    "st": "巴南",
-   "t": 31.7,
-   "feel": 35.0,
-   "hum": 53.0,
+   "t": 25.4,
+   "feel": 29.6,
+   "hum": 86.0,
    "info": "多云",
    "rain": 0.0,
-   "wind_d": "西北风",
+   "wind_d": "东南风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "23",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
      "day_t": "30",
      "night_info": "多云",
      "night_t": "24",
-     "wind_d": "东北风",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
      "day_t": "31",
-     "night_info": "多云",
+     "night_info": "晴",
      "night_t": "23",
-     "wind_d": "北风",
+     "wind_d": "东南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
      "day_info": "多云",
      "day_t": "31",
-     "night_info": "晴",
-     "night_t": "24",
-     "wind_d": "西北风",
+     "night_info": "小雨",
+     "night_t": "23",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
      "day_info": "小雨",
-     "day_t": "32",
+     "day_t": "31",
      "night_info": "小雨",
      "night_t": "24",
      "wind_d": "西风",
@@ -985,8 +976,8 @@
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "32",
+     "day_info": "小雨",
+     "day_t": "31",
      "night_info": "小雨",
      "night_t": "24",
      "wind_d": "西风",
@@ -995,10 +986,19 @@
     {
      "date": "2026-08-26",
      "day_info": "多云",
-     "day_t": "33",
-     "night_info": "小雨",
+     "day_t": "32",
+     "night_info": "多云",
      "night_t": "24",
-     "wind_d": "西北风",
+     "wind_d": "北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "小雨",
+     "day_t": "33",
+     "night_info": "多云",
+     "night_t": "25",
+     "wind_d": "北风",
      "wind_p": "微风"
     }
    ]
@@ -1006,30 +1006,21 @@
   {
    "n": "黔江区",
    "st": "黔江",
-   "t": 29.0,
-   "feel": 32.7,
-   "hum": 68.0,
-   "info": "多云",
+   "t": 23.1,
+   "feel": 26.5,
+   "hum": 96.0,
+   "info": "晴",
    "rain": 0.0,
-   "wind_d": "西南风",
+   "wind_d": "东南风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
     {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "多云",
-     "night_t": "21",
-     "wind_d": null,
-     "wind_p": null
-    },
-    {
      "date": "2026-08-21",
-     "day_info": "多云",
-     "day_t": "31",
-     "night_info": "多云",
-     "night_t": "22",
+     "day_info": "小雨",
+     "day_t": "32",
+     "night_info": "小雨",
+     "night_t": "23",
      "wind_d": "东北风",
      "wind_p": "微风"
     },
@@ -1037,25 +1028,25 @@
      "date": "2026-08-22",
      "day_info": "小雨",
      "day_t": "31",
-     "night_info": "多云",
+     "night_info": "小雨",
      "night_t": "22",
-     "wind_d": "北风",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
-     "day_info": "多云",
-     "day_t": "32",
+     "day_info": "晴",
+     "day_t": "33",
      "night_info": "晴",
-     "night_t": "22",
-     "wind_d": "东南风",
+     "night_t": "21",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "小雨",
+     "day_info": "多云",
      "day_t": "33",
-     "night_info": "小雨",
+     "night_info": "多云",
      "night_t": "23",
      "wind_d": "东北风",
      "wind_p": "微风"
@@ -1063,19 +1054,28 @@
     {
      "date": "2026-08-25",
      "day_info": "小雨",
-     "day_t": "32",
+     "day_t": "31",
      "night_info": "小雨",
      "night_t": "23",
-     "wind_d": "东北风",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
      "day_info": "多云",
      "day_t": "31",
-     "night_info": "小雨",
+     "night_info": "多云",
      "night_t": "23",
      "wind_d": "东风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "32",
+     "night_info": "多云",
+     "night_t": "22",
+     "wind_d": "东南风",
      "wind_p": "微风"
     }
    ]
@@ -1083,39 +1083,30 @@
   {
    "n": "长寿区",
    "st": "长寿",
-   "t": 32.4,
-   "feel": 35.5,
-   "hum": 59.0,
+   "t": 26.2,
+   "feel": 30.7,
+   "hum": 91.0,
    "info": "多云",
    "rain": 0.0,
-   "wind_d": "西北风",
-   "wind_p": "3级",
-   "pub": "2026-08-20 17:30",
+   "wind_d": "东北风",
+   "wind_p": "微风",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "25",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
-     "day_t": "32",
-     "night_info": "多云",
-     "night_t": "25",
-     "wind_d": "东北风",
+     "day_t": "33",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "西北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
      "day_t": "34",
-     "night_info": "多云",
-     "night_t": "26",
+     "night_info": "晴",
+     "night_t": "27",
      "wind_d": "东风",
      "wind_p": "微风"
     },
@@ -1124,26 +1115,26 @@
      "day_info": "多云",
      "day_t": "34",
      "night_info": "晴",
-     "night_t": "27",
-     "wind_d": "东北风",
+     "night_t": "26",
+     "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "多云",
+     "day_info": "晴",
      "day_t": "34",
      "night_info": "晴",
-     "night_t": "26",
+     "night_t": "25",
      "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "34",
-     "night_info": "阴",
+     "day_info": "小雨",
+     "day_t": "35",
+     "night_info": "小雨",
      "night_t": "26",
-     "wind_d": "西风",
+     "wind_d": "西北风",
      "wind_p": "微风"
     },
     {
@@ -1151,8 +1142,17 @@
      "day_info": "多云",
      "day_t": "35",
      "night_info": "多云",
+     "night_t": "27",
+     "wind_d": "北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "35",
+     "night_info": "多云",
      "night_t": "26",
-     "wind_d": "西风",
+     "wind_d": "北风",
      "wind_p": "微风"
     }
    ]
@@ -1160,38 +1160,29 @@
   {
    "n": "江津区",
    "st": "江津",
-   "t": 33.9,
-   "feel": 37.9,
-   "hum": 49.0,
-   "info": "晴",
+   "t": 26.7,
+   "feel": 31.9,
+   "hum": 90.0,
+   "info": "多云",
    "rain": 0.0,
-   "wind_d": "西北风",
+   "wind_d": "东北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "中雨",
-     "night_t": "25",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "小雨",
-     "day_t": "31",
+     "day_t": "33",
      "night_info": "小雨",
-     "night_t": "25",
-     "wind_d": "东北风",
+     "night_t": "26",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
      "day_t": "33",
-     "night_info": "多云",
+     "night_info": "晴",
      "night_t": "25",
      "wind_d": "东风",
      "wind_p": "微风"
@@ -1200,36 +1191,45 @@
      "date": "2026-08-23",
      "day_info": "多云",
      "day_t": "34",
-     "night_info": "晴",
-     "night_t": "26",
-     "wind_d": "西南风",
+     "night_info": "小雨",
+     "night_t": "25",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "多云",
-     "day_t": "35",
-     "night_info": "小雨",
-     "night_t": "26",
-     "wind_d": "西南风",
+     "day_info": "小雨",
+     "day_t": "34",
+     "night_info": "中雨",
+     "night_t": "25",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "35",
+     "day_info": "小雨",
+     "day_t": "34",
      "night_info": "小雨",
      "night_t": "26",
-     "wind_d": "西南风",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
      "day_info": "多云",
-     "day_t": "36",
-     "night_info": "小雨",
+     "day_t": "35",
+     "night_info": "多云",
      "night_t": "26",
-     "wind_d": "西风",
+     "wind_d": "东北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "小雨",
+     "day_t": "36",
+     "night_info": "多云",
+     "night_t": "27",
+     "wind_d": "东风",
      "wind_p": "微风"
     }
    ]
@@ -1237,76 +1237,76 @@
   {
    "n": "合川区",
    "st": "合川",
-   "t": 30.6,
-   "feel": 33.6,
-   "hum": 63.0,
+   "t": 25.9,
+   "feel": 30.0,
+   "hum": 87.0,
    "info": "多云",
    "rain": 0.0,
-   "wind_d": "东北风",
+   "wind_d": "西南风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "中雨",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "小雨",
      "day_t": "31",
-     "night_info": "多云",
+     "night_info": "晴",
      "night_t": "25",
-     "wind_d": "北风",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
      "day_t": "33",
-     "night_info": "多云",
+     "night_info": "晴",
      "night_t": "25",
-     "wind_d": "西北风",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
      "day_info": "多云",
-     "day_t": "34",
+     "day_t": "33",
      "night_info": "晴",
-     "night_t": "27",
-     "wind_d": "西北风",
+     "night_t": "26",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "晴",
-     "day_t": "34",
-     "night_info": "晴",
+     "day_info": "小雨",
+     "day_t": "35",
+     "night_info": "小雨",
      "night_t": "25",
-     "wind_d": "西风",
+     "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
      "day_info": "多云",
-     "day_t": "35",
-     "night_info": "小雨",
-     "night_t": "25",
-     "wind_d": "西风",
+     "day_t": "34",
+     "night_info": "多云",
+     "night_t": "26",
+     "wind_d": "东南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
      "day_info": "多云",
      "day_t": "34",
-     "night_info": "小雨",
+     "night_info": "多云",
      "night_t": "25",
-     "wind_d": "西风",
+     "wind_d": "西北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "35",
+     "night_info": "多云",
+     "night_t": "26",
+     "wind_d": "南风",
      "wind_p": "微风"
     }
    ]
@@ -1314,28 +1314,19 @@
   {
    "n": "永川区",
    "st": "永川",
-   "t": 31.5,
-   "feel": 35.3,
-   "hum": 57.0,
-   "info": "晴",
+   "t": 26.5,
+   "feel": 30.6,
+   "hum": 80.0,
+   "info": "阴",
    "rain": 0.0,
-   "wind_d": "西北风",
+   "wind_d": "东北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "大雨",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "小雨",
-     "day_t": "30",
+     "day_t": "32",
      "night_info": "小雨",
      "night_t": "25",
      "wind_d": "东风",
@@ -1344,9 +1335,9 @@
     {
      "date": "2026-08-22",
      "day_info": "多云",
-     "day_t": "32",
-     "night_info": "多云",
-     "night_t": "26",
+     "day_t": "33",
+     "night_info": "晴",
+     "night_t": "25",
      "wind_d": "东风",
      "wind_p": "微风"
     },
@@ -1355,35 +1346,44 @@
      "day_info": "多云",
      "day_t": "33",
      "night_info": "晴",
-     "night_t": "26",
+     "night_t": "25",
      "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "晴",
-     "day_t": "33",
+     "day_info": "小雨",
+     "day_t": "34",
      "night_info": "小雨",
-     "night_t": "26",
-     "wind_d": "西风",
+     "night_t": "25",
+     "wind_d": "西北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "34",
-     "night_info": "小雨",
-     "night_t": "26",
-     "wind_d": "南风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-26",
      "day_info": "小雨",
      "day_t": "34",
      "night_info": "小雨",
      "night_t": "26",
      "wind_d": "西风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-26",
+     "day_info": "多云",
+     "day_t": "34",
+     "night_info": "多云",
+     "night_t": "26",
+     "wind_d": "南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "小雨",
+     "day_t": "34",
+     "night_info": "小雨",
+     "night_t": "26",
+     "wind_d": "南风",
      "wind_p": "微风"
     }
    ]
@@ -1391,40 +1391,31 @@
   {
    "n": "南川区",
    "st": "南川",
-   "t": 24.7,
-   "feel": 29.6,
-   "hum": 100.0,
-   "info": "大雨",
-   "rain": 9.9,
-   "wind_d": "东北风",
+   "t": 24.4,
+   "feel": 28.5,
+   "hum": 90.0,
+   "info": null,
+   "rain": 0.0,
+   "wind_d": "西北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "小雨",
      "day_t": "31",
-     "night_info": "多云",
+     "night_info": "阴",
      "night_t": "24",
-     "wind_d": "西北风",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
-     "day_t": "31",
-     "night_info": "多云",
+     "day_t": "32",
+     "night_info": "晴",
      "night_t": "24",
-     "wind_d": "西风",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
@@ -1432,17 +1423,17 @@
      "day_info": "多云",
      "day_t": "33",
      "night_info": "晴",
-     "night_t": "25",
-     "wind_d": "西南风",
+     "night_t": "23",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
      "day_info": "小雨",
-     "day_t": "32",
+     "day_t": "31",
      "night_info": "小雨",
      "night_t": "24",
-     "wind_d": "西南风",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
@@ -1451,16 +1442,25 @@
      "day_t": "32",
      "night_info": "小雨",
      "night_t": "24",
-     "wind_d": "西风",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
-     "day_info": "多云",
-     "day_t": "34",
+     "day_info": "小雨",
+     "day_t": "32",
      "night_info": "多云",
      "night_t": "24",
-     "wind_d": "南风",
+     "wind_d": "东南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "小雨",
+     "day_t": "33",
+     "night_info": "小雨",
+     "night_t": "24",
+     "wind_d": "东风",
      "wind_p": "微风"
     }
    ]
@@ -1468,63 +1468,54 @@
   {
    "n": "璧山区",
    "st": "璧山",
-   "t": 32.8,
-   "feel": 36.9,
-   "hum": 56.0,
-   "info": "晴",
+   "t": 27.0,
+   "feel": 31.2,
+   "hum": 82.0,
+   "info": "多云",
    "rain": 0.0,
    "wind_d": "西北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "25",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "小雨",
      "day_t": "31",
-     "night_info": "多云",
-     "night_t": "25",
-     "wind_d": "东风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-22",
-     "day_info": "多云",
-     "day_t": "33",
      "night_info": "多云",
      "night_t": "26",
      "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
+     "date": "2026-08-22",
+     "day_info": "多云",
+     "day_t": "33",
+     "night_info": "晴",
+     "night_t": "25",
+     "wind_d": "东风",
+     "wind_p": "微风"
+    },
+    {
      "date": "2026-08-23",
      "day_info": "多云",
-     "day_t": "34",
+     "day_t": "33",
      "night_info": "晴",
+     "night_t": "25",
+     "wind_d": "北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-24",
+     "day_info": "小雨",
+     "day_t": "34",
+     "night_info": "中雨",
      "night_t": "26",
      "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
-     "date": "2026-08-24",
-     "day_info": "晴",
-     "day_t": "34",
-     "night_info": "晴",
-     "night_t": "26",
-     "wind_d": "西风",
-     "wind_p": "微风"
-    },
-    {
      "date": "2026-08-25",
-     "day_info": "多云",
+     "day_info": "小雨",
      "day_t": "35",
      "night_info": "小雨",
      "night_t": "26",
@@ -1533,11 +1524,20 @@
     },
     {
      "date": "2026-08-26",
-     "day_info": "小雨",
-     "day_t": "35",
-     "night_info": "小雨",
+     "day_info": "多云",
+     "day_t": "34",
+     "night_info": "多云",
      "night_t": "26",
-     "wind_d": "西南风",
+     "wind_d": "北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "35",
+     "night_info": "多云",
+     "night_t": "27",
+     "wind_d": "东南风",
      "wind_p": "微风"
     }
    ]
@@ -1545,57 +1545,48 @@
   {
    "n": "铜梁区",
    "st": "铜梁",
-   "t": 30.2,
-   "feel": 34.2,
-   "hum": 66.0,
+   "t": 25.9,
+   "feel": 30.3,
+   "hum": 91.0,
    "info": "多云",
    "rain": 0.0,
    "wind_d": "西北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "中雨",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "小雨",
      "day_t": "30",
-     "night_info": "多云",
+     "night_info": "晴",
      "night_t": "25",
-     "wind_d": "东风",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
      "day_t": "33",
-     "night_info": "多云",
-     "night_t": "26",
-     "wind_d": "北风",
+     "night_info": "晴",
+     "night_t": "25",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
      "day_info": "多云",
-     "day_t": "34",
-     "night_info": "多云",
-     "night_t": "27",
-     "wind_d": "北风",
+     "day_t": "33",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "多云",
-     "day_t": "34",
-     "night_info": "晴",
-     "night_t": "25",
+     "day_info": "小雨",
+     "day_t": "35",
+     "night_info": "中雨",
+     "night_t": "26",
      "wind_d": "西风",
      "wind_p": "微风"
     },
@@ -1603,18 +1594,27 @@
      "date": "2026-08-25",
      "day_info": "多云",
      "day_t": "35",
-     "night_info": "小雨",
+     "night_info": "多云",
      "night_t": "26",
-     "wind_d": "西南风",
+     "wind_d": "南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
-     "day_info": "小雨",
-     "day_t": "35",
-     "night_info": "小雨",
+     "day_info": "多云",
+     "day_t": "34",
+     "night_info": "多云",
      "night_t": "25",
-     "wind_d": "西风",
+     "wind_d": "北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "35",
+     "night_info": "多云",
+     "night_t": "26",
+     "wind_d": "南风",
      "wind_p": "微风"
     }
    ]
@@ -1622,39 +1622,30 @@
   {
    "n": "潼南区",
    "st": "潼南",
-   "t": 32.0,
-   "feel": 35.3,
-   "hum": 53.0,
-   "info": "多云",
+   "t": 25.0,
+   "feel": 29.0,
+   "hum": 93.0,
+   "info": "阴",
    "rain": 0.0,
-   "wind_d": "东北风",
+   "wind_d": "西南风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
     {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "大雨",
-     "night_t": "23",
-     "wind_d": null,
-     "wind_p": null
-    },
-    {
      "date": "2026-08-21",
-     "day_info": "中雨",
-     "day_t": "30",
-     "night_info": "多云",
+     "day_info": "小雨",
+     "day_t": "31",
+     "night_info": "晴",
      "night_t": "24",
      "wind_d": "东风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
-     "day_info": "多云",
+     "day_info": "晴",
      "day_t": "33",
-     "night_info": "多云",
-     "night_t": "25",
+     "night_info": "晴",
+     "night_t": "24",
      "wind_d": "东南风",
      "wind_p": "微风"
     },
@@ -1662,36 +1653,45 @@
      "date": "2026-08-23",
      "day_info": "多云",
      "day_t": "34",
-     "night_info": "多云",
+     "night_info": "晴",
      "night_t": "26",
-     "wind_d": "东南风",
+     "wind_d": "南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "晴",
-     "day_t": "35",
-     "night_info": "晴",
-     "night_t": "26",
-     "wind_d": "西南风",
+     "day_info": "小雨",
+     "day_t": "36",
+     "night_info": "小雨",
+     "night_t": "25",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
      "day_info": "多云",
-     "day_t": "36",
+     "day_t": "37",
      "night_info": "小雨",
-     "night_t": "25",
-     "wind_d": "西南风",
+     "night_t": "26",
+     "wind_d": "南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
-     "day_info": "小雨",
+     "day_info": "多云",
      "day_t": "35",
      "night_info": "小雨",
      "night_t": "25",
-     "wind_d": "西北风",
+     "wind_d": "南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "小雨",
+     "day_t": "36",
+     "night_info": "小雨",
+     "night_t": "26",
+     "wind_d": "西南风",
      "wind_p": "微风"
     }
    ]
@@ -1699,38 +1699,29 @@
   {
    "n": "荣昌区",
    "st": "荣昌",
-   "t": 31.8,
-   "feel": 35.4,
-   "hum": 60.0,
-   "info": "晴",
+   "t": 25.8,
+   "feel": 30.4,
+   "hum": 87.0,
+   "info": "阴",
    "rain": 0.0,
-   "wind_d": "西北风",
+   "wind_d": "西南风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "暴雨",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "小雨",
-     "day_t": "32",
+     "day_t": "31",
      "night_info": "小雨",
      "night_t": "25",
-     "wind_d": "东风",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
      "day_t": "33",
-     "night_info": "多云",
+     "night_info": "晴",
      "night_t": "25",
      "wind_d": "东风",
      "wind_p": "微风"
@@ -1740,35 +1731,44 @@
      "day_info": "多云",
      "day_t": "33",
      "night_info": "晴",
-     "night_t": "26",
-     "wind_d": "南风",
+     "night_t": "25",
+     "wind_d": "西北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
-     "day_info": "多云",
-     "day_t": "34",
+     "day_info": "小雨",
+     "day_t": "35",
      "night_info": "小雨",
-     "night_t": "26",
-     "wind_d": "西风",
+     "night_t": "25",
+     "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
+     "day_info": "小雨",
      "day_t": "35",
      "night_info": "小雨",
-     "night_t": "27",
-     "wind_d": "南风",
+     "night_t": "25",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
+     "day_info": "多云",
+     "day_t": "34",
+     "night_info": "多云",
+     "night_t": "25",
+     "wind_d": "东南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
      "day_info": "小雨",
      "day_t": "35",
      "night_info": "小雨",
      "night_t": "26",
-     "wind_d": "东北风",
+     "wind_d": "西南风",
      "wind_p": "微风"
     }
    ]
@@ -1776,40 +1776,31 @@
   {
    "n": "开州区",
    "st": "开州",
-   "t": 28.9,
-   "feel": 32.6,
-   "hum": 71.0,
+   "t": 23.7,
+   "feel": 27.7,
+   "hum": 96.0,
    "info": "多云",
    "rain": 0.0,
-   "wind_d": "西南风",
+   "wind_d": "东北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "多云",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
-     "day_t": "34",
-     "night_info": "多云",
+     "day_t": "32",
+     "night_info": "晴",
      "night_t": "24",
-     "wind_d": "南风",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
-     "day_t": "35",
-     "night_info": "多云",
+     "day_t": "36",
+     "night_info": "晴",
      "night_t": "24",
-     "wind_d": "东南风",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
@@ -1817,26 +1808,26 @@
      "day_info": "晴",
      "day_t": "36",
      "night_info": "晴",
-     "night_t": "24",
-     "wind_d": "东北风",
+     "night_t": "25",
+     "wind_d": "东南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
      "day_info": "晴",
-     "day_t": "36",
+     "day_t": "37",
      "night_info": "晴",
      "night_t": "25",
-     "wind_d": "西风",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
+     "day_info": "晴",
      "day_t": "37",
      "night_info": "晴",
      "night_t": "25",
-     "wind_d": "东北风",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
@@ -1844,8 +1835,17 @@
      "day_info": "多云",
      "day_t": "37",
      "night_info": "多云",
-     "night_t": "25",
+     "night_t": "24",
      "wind_d": "东风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "37",
+     "night_info": "多云",
+     "night_t": "24",
+     "wind_d": "东南风",
      "wind_p": "微风"
     }
    ]
@@ -1853,65 +1853,56 @@
   {
    "n": "梁平区",
    "st": "梁平",
-   "t": 30.2,
-   "feel": 33.5,
-   "hum": 67.0,
-   "info": "阴",
+   "t": 24.5,
+   "feel": 28.2,
+   "hum": 95.0,
+   "info": "多云",
    "rain": 0.0,
    "wind_d": "东北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "多云",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
-     "day_t": "33",
-     "night_info": "多云",
-     "night_t": "24",
-     "wind_d": "东北风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-22",
-     "day_info": "多云",
-     "day_t": "34",
-     "night_info": "多云",
-     "night_t": "24",
-     "wind_d": "东南风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-23",
-     "day_info": "多云",
-     "day_t": "34",
+     "day_t": "30",
      "night_info": "晴",
      "night_t": "24",
      "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
-     "date": "2026-08-24",
+     "date": "2026-08-22",
      "day_info": "晴",
-     "day_t": "34",
+     "day_t": "33",
      "night_info": "晴",
      "night_t": "24",
-     "wind_d": "西风",
+     "wind_d": "东南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-23",
+     "day_info": "晴",
+     "day_t": "35",
+     "night_info": "晴",
+     "night_t": "24",
+     "wind_d": "东南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-24",
+     "day_info": "晴",
+     "day_t": "35",
+     "night_info": "晴",
+     "night_t": "25",
+     "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "35",
-     "night_info": "多云",
+     "day_info": "晴",
+     "day_t": "36",
+     "night_info": "晴",
      "night_t": "24",
      "wind_d": "东南风",
      "wind_p": "微风"
@@ -1922,7 +1913,16 @@
      "day_t": "35",
      "night_info": "多云",
      "night_t": "24",
-     "wind_d": "东北风",
+     "wind_d": "东南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "35",
+     "night_info": "多云",
+     "night_t": "24",
+     "wind_d": "东南风",
      "wind_p": "微风"
     }
    ]
@@ -1930,35 +1930,62 @@
   {
    "n": "武隆区",
    "st": "武隆",
-   "t": 28.2,
-   "feel": 31.4,
-   "hum": 75.0,
+   "t": 24.0,
+   "feel": 28.2,
+   "hum": 96.0,
    "info": "多云",
    "rain": 0.0,
-   "wind_d": "东南风",
+   "wind_d": "东北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "阴",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "小雨",
      "day_t": "33",
-     "night_info": "多云",
+     "night_info": "小雨",
      "night_t": "24",
      "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
+     "day_info": "小雨",
+     "day_t": "34",
+     "night_info": "阴",
+     "night_t": "24",
+     "wind_d": "东北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-23",
+     "day_info": "多云",
+     "day_t": "35",
+     "night_info": "晴",
+     "night_t": "24",
+     "wind_d": "东风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-24",
+     "day_info": "多云",
+     "day_t": "36",
+     "night_info": "多云",
+     "night_t": "24",
+     "wind_d": "北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-25",
+     "day_info": "小雨",
+     "day_t": "35",
+     "night_info": "小雨",
+     "night_t": "24",
+     "wind_d": "东北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-26",
      "day_info": "小雨",
      "day_t": "34",
      "night_info": "多云",
@@ -1967,36 +1994,9 @@
      "wind_p": "微风"
     },
     {
-     "date": "2026-08-23",
-     "day_info": "多云",
-     "day_t": "35",
-     "night_info": "晴",
-     "night_t": "25",
-     "wind_d": "东北风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-24",
+     "date": "2026-08-27",
      "day_info": "小雨",
-     "day_t": "36",
-     "night_info": "小雨",
-     "night_t": "25",
-     "wind_d": "北风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-25",
-     "day_info": "小雨",
-     "day_t": "35",
-     "night_info": "小雨",
-     "night_t": "24",
-     "wind_d": "北风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-26",
-     "day_info": "多云",
-     "day_t": "35",
+     "day_t": "34",
      "night_info": "多云",
      "night_t": "24",
      "wind_d": "东风",
@@ -2007,46 +2007,37 @@
   {
    "n": "城口县",
    "st": "城口",
-   "t": 28.6,
-   "feel": 32.7,
-   "hum": 67.0,
+   "t": 22.2,
+   "feel": 25.5,
+   "hum": 93.0,
    "info": "多云",
    "rain": 0.0,
-   "wind_d": "西南风",
+   "wind_d": "东南风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "阴",
-     "night_t": "20",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "小雨",
      "day_t": "29",
-     "night_info": "多云",
+     "night_info": "晴",
      "night_t": "20",
-     "wind_d": "西南风",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
-     "day_t": "31",
-     "night_info": "多云",
-     "night_t": "21",
+     "day_t": "32",
+     "night_info": "晴",
+     "night_t": "20",
      "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
-     "day_info": "多云",
-     "day_t": "32",
+     "day_info": "晴",
+     "day_t": "34",
      "night_info": "晴",
      "night_t": "20",
      "wind_d": "西北风",
@@ -2055,7 +2046,7 @@
     {
      "date": "2026-08-24",
      "day_info": "晴",
-     "day_t": "32",
+     "day_t": "35",
      "night_info": "晴",
      "night_t": "21",
      "wind_d": "东北风",
@@ -2064,10 +2055,10 @@
     {
      "date": "2026-08-25",
      "day_info": "多云",
-     "day_t": "33",
+     "day_t": "34",
      "night_info": "晴",
      "night_t": "22",
-     "wind_d": "东南风",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
@@ -2075,8 +2066,17 @@
      "day_info": "多云",
      "day_t": "33",
      "night_info": "多云",
-     "night_t": "20",
+     "night_t": "21",
      "wind_d": "西南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "34",
+     "night_info": "多云",
+     "night_t": "22",
+     "wind_d": "西风",
      "wind_p": "微风"
     }
    ]
@@ -2084,38 +2084,29 @@
   {
    "n": "丰都县",
    "st": "丰都",
-   "t": 29.8,
-   "feel": 33.2,
-   "hum": 70.0,
-   "info": "阴",
+   "t": 24.9,
+   "feel": 29.3,
+   "hum": 94.0,
+   "info": "多云",
    "rain": 0.0,
    "wind_d": "东北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
     {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "25",
-     "wind_d": null,
-     "wind_p": null
-    },
-    {
      "date": "2026-08-21",
-     "day_info": "多云",
-     "day_t": "31",
-     "night_info": "多云",
+     "day_info": "小雨",
+     "day_t": "33",
+     "night_info": "晴",
      "night_t": "25",
-     "wind_d": "东北风",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
-     "day_t": "32",
-     "night_info": "多云",
+     "day_t": "35",
+     "night_info": "晴",
      "night_t": "25",
      "wind_d": "东风",
      "wind_p": "微风"
@@ -2123,37 +2114,46 @@
     {
      "date": "2026-08-23",
      "day_info": "晴",
-     "day_t": "33",
+     "day_t": "37",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-24",
+     "day_info": "晴",
+     "day_t": "38",
      "night_info": "晴",
      "night_t": "26",
      "wind_d": "西北风",
      "wind_p": "微风"
     },
     {
-     "date": "2026-08-24",
-     "day_info": "小雨",
-     "day_t": "35",
-     "night_info": "晴",
-     "night_t": "26",
-     "wind_d": "西风",
-     "wind_p": "微风"
-    },
-    {
      "date": "2026-08-25",
      "day_info": "小雨",
-     "day_t": "34",
-     "night_info": "阴",
+     "day_t": "38",
+     "night_info": "多云",
      "night_t": "25",
-     "wind_d": "南风",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
      "day_info": "多云",
-     "day_t": "35",
+     "day_t": "38",
      "night_info": "多云",
      "night_t": "25",
-     "wind_d": "南风",
+     "wind_d": "西风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "小雨",
+     "day_t": "38",
+     "night_info": "多云",
+     "night_t": "25",
+     "wind_d": "西风",
      "wind_p": "微风"
     }
    ]
@@ -2161,135 +2161,49 @@
   {
    "n": "垫江县",
    "st": "垫江",
-   "t": 30.1,
-   "feel": 34.6,
-   "hum": 74.0,
-   "info": "小雨",
-   "rain": 0.1,
+   "t": 24.5,
+   "feel": 28.6,
+   "hum": 100.0,
+   "info": "多云",
+   "rain": 0.0,
    "wind_d": "西北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "小雨",
-     "night_t": "23",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
+     "day_t": "29",
+     "night_info": "晴",
+     "night_t": "24",
+     "wind_d": "东北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-22",
+     "day_info": "多云",
      "day_t": "32",
-     "night_info": "多云",
-     "night_t": "23",
+     "night_info": "晴",
+     "night_t": "24",
+     "wind_d": "南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-23",
+     "day_info": "晴",
+     "day_t": "34",
+     "night_info": "晴",
+     "night_t": "24",
      "wind_d": "西南风",
      "wind_p": "微风"
     },
     {
-     "date": "2026-08-22",
-     "day_info": "多云",
-     "day_t": "33",
-     "night_info": "多云",
-     "night_t": "24",
-     "wind_d": "东南风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-23",
-     "day_info": "晴",
-     "day_t": "33",
-     "night_info": "晴",
-     "night_t": "24",
-     "wind_d": "西北风",
-     "wind_p": "微风"
-    },
-    {
      "date": "2026-08-24",
      "day_info": "晴",
      "day_t": "34",
      "night_info": "晴",
-     "night_t": "23",
-     "wind_d": "西风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "34",
-     "night_info": "多云",
      "night_t": "24",
      "wind_d": "西风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-26",
-     "day_info": "多云",
-     "day_t": "34",
-     "night_info": "多云",
-     "night_t": "24",
-     "wind_d": "东北风",
-     "wind_p": "微风"
-    }
-   ]
-  },
-  {
-   "n": "忠县",
-   "st": "忠县",
-   "t": 31.3,
-   "feel": 35.6,
-   "hum": 67.0,
-   "info": "阴",
-   "rain": 0.0,
-   "wind_d": "东北风",
-   "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
-   "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "多云",
-     "night_t": "25",
-     "wind_d": null,
-     "wind_p": null
-    },
-    {
-     "date": "2026-08-21",
-     "day_info": "多云",
-     "day_t": "33",
-     "night_info": "多云",
-     "night_t": "25",
-     "wind_d": "东风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-22",
-     "day_info": "多云",
-     "day_t": "33",
-     "night_info": "多云",
-     "night_t": "25",
-     "wind_d": "东北风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-23",
-     "day_info": "多云",
-     "day_t": "34",
-     "night_info": "晴",
-     "night_t": "26",
-     "wind_d": "东南风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-24",
-     "day_info": "晴",
-     "day_t": "34",
-     "night_info": "晴",
-     "night_t": "26",
-     "wind_d": "西北风",
      "wind_p": "微风"
     },
     {
@@ -2297,8 +2211,85 @@
      "day_info": "小雨",
      "day_t": "35",
      "night_info": "多云",
+     "night_t": "24",
+     "wind_d": "东北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-26",
+     "day_info": "多云",
+     "day_t": "34",
+     "night_info": "多云",
+     "night_t": "24",
+     "wind_d": "东风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "34",
+     "night_info": "多云",
+     "night_t": "24",
+     "wind_d": "东南风",
+     "wind_p": "微风"
+    }
+   ]
+  },
+  {
+   "n": "忠县",
+   "st": "忠县",
+   "t": 25.6,
+   "feel": 30.6,
+   "hum": 97.0,
+   "info": "多云",
+   "rain": 0.0,
+   "wind_d": "西北风",
+   "wind_p": "微风",
+   "pub": "2026-08-21 07:20",
+   "fc": [
+    {
+     "date": "2026-08-21",
+     "day_info": "小雨",
+     "day_t": "31",
+     "night_info": "晴",
+     "night_t": "25",
+     "wind_d": "东北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-22",
+     "day_info": "多云",
+     "day_t": "34",
+     "night_info": "晴",
      "night_t": "25",
      "wind_d": "西南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-23",
+     "day_info": "晴",
+     "day_t": "34",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-24",
+     "day_info": "晴",
+     "day_t": "35",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-25",
+     "day_info": "小雨",
+     "day_t": "34",
+     "night_info": "多云",
+     "night_t": "26",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
@@ -2307,6 +2298,15 @@
      "day_t": "35",
      "night_info": "多云",
      "night_t": "25",
+     "wind_d": "东北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "34",
+     "night_info": "多云",
+     "night_t": "26",
      "wind_d": "东北风",
      "wind_p": "微风"
     }
@@ -2315,29 +2315,20 @@
   {
    "n": "云阳县",
    "st": "云阳",
-   "t": 31.2,
-   "feel": 36.2,
-   "hum": 65.0,
+   "t": 25.3,
+   "feel": 30.3,
+   "hum": 94.0,
    "info": "多云",
    "rain": 0.0,
-   "wind_d": "东南风",
+   "wind_d": null,
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "多云",
-     "night_t": "25",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
      "day_t": "34",
-     "night_info": "多云",
+     "night_info": "晴",
      "night_t": "25",
      "wind_d": "北风",
      "wind_p": "微风"
@@ -2345,10 +2336,10 @@
     {
      "date": "2026-08-22",
      "day_info": "多云",
-     "day_t": "36",
-     "night_info": "多云",
+     "day_t": "37",
+     "night_info": "晴",
      "night_t": "25",
-     "wind_d": "东北风",
+     "wind_d": "南风",
      "wind_p": "微风"
     },
     {
@@ -2357,22 +2348,22 @@
      "day_t": "37",
      "night_info": "晴",
      "night_t": "25",
-     "wind_d": "西风",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
      "day_info": "晴",
-     "day_t": "36",
+     "day_t": "37",
      "night_info": "晴",
      "night_t": "25",
-     "wind_d": "北风",
+     "wind_d": "东南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "37",
+     "day_info": "晴",
+     "day_t": "38",
      "night_info": "晴",
      "night_t": "25",
      "wind_d": "东北风",
@@ -2386,46 +2377,46 @@
      "night_t": "25",
      "wind_d": "东北风",
      "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "37",
+     "night_info": "多云",
+     "night_t": "25",
+     "wind_d": "东南风",
+     "wind_p": "微风"
     }
    ]
   },
   {
    "n": "奉节县",
    "st": "奉节",
-   "t": 29.4,
-   "feel": 33.1,
-   "hum": 68.0,
+   "t": 25.8,
+   "feel": 29.0,
+   "hum": 89.0,
    "info": "多云",
    "rain": 0.0,
    "wind_d": "东北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
     {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "多云",
-     "night_t": "25",
-     "wind_d": null,
-     "wind_p": null
-    },
-    {
      "date": "2026-08-21",
-     "day_info": "多云",
-     "day_t": "36",
-     "night_info": "多云",
-     "night_t": "25",
-     "wind_d": "西风",
+     "day_info": "小雨",
+     "day_t": "35",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
-     "day_info": "多云",
+     "day_info": "晴",
      "day_t": "37",
-     "night_info": "多云",
+     "night_info": "晴",
      "night_t": "26",
-     "wind_d": "东风",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
@@ -2440,16 +2431,16 @@
     {
      "date": "2026-08-24",
      "day_info": "晴",
-     "day_t": "37",
+     "day_t": "39",
      "night_info": "晴",
-     "night_t": "26",
-     "wind_d": "东风",
+     "night_t": "27",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "37",
+     "day_info": "晴",
+     "day_t": "38",
      "night_info": "晴",
      "night_t": "26",
      "wind_d": "东风",
@@ -2458,7 +2449,16 @@
     {
      "date": "2026-08-26",
      "day_info": "多云",
-     "day_t": "37",
+     "day_t": "38",
+     "night_info": "晴",
+     "night_t": "26",
+     "wind_d": "东风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "38",
      "night_info": "多云",
      "night_t": "26",
      "wind_d": "东风",
@@ -2469,38 +2469,29 @@
   {
    "n": "巫山县",
    "st": "巫山",
-   "t": 27.5,
-   "feel": 31.0,
-   "hum": 73.0,
+   "t": 24.4,
+   "feel": 27.9,
+   "hum": 95.0,
    "info": "多云",
    "rain": 0.0,
    "wind_d": "东北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
     {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "多云",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
-    {
      "date": "2026-08-21",
-     "day_info": "多云",
-     "day_t": "33",
-     "night_info": "多云",
+     "day_info": "小雨",
+     "day_t": "32",
+     "night_info": "晴",
      "night_t": "24",
      "wind_d": "东风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
-     "day_info": "多云",
-     "day_t": "35",
-     "night_info": "多云",
+     "day_info": "晴",
+     "day_t": "34",
+     "night_info": "晴",
      "night_t": "24",
      "wind_d": "东风",
      "wind_p": "微风"
@@ -2511,22 +2502,22 @@
      "day_t": "34",
      "night_info": "晴",
      "night_t": "24",
-     "wind_d": "东南风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-24",
-     "day_info": "晴",
-     "day_t": "33",
-     "night_info": "晴",
-     "night_t": "24",
      "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
-     "date": "2026-08-25",
+     "date": "2026-08-24",
      "day_info": "多云",
-     "day_t": "32",
+     "day_t": "35",
+     "night_info": "晴",
+     "night_t": "24",
+     "wind_d": "东风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-25",
+     "day_info": "晴",
+     "day_t": "33",
      "night_info": "晴",
      "night_t": "24",
      "wind_d": "东风",
@@ -2536,6 +2527,15 @@
      "date": "2026-08-26",
      "day_info": "多云",
      "day_t": "33",
+     "night_info": "晴",
+     "night_t": "24",
+     "wind_d": "东风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "34",
      "night_info": "多云",
      "night_t": "24",
      "wind_d": "东风",
@@ -2546,64 +2546,55 @@
   {
    "n": "巫溪县",
    "st": "巫溪",
-   "t": 29.7,
-   "feel": 34.5,
-   "hum": 68.0,
+   "t": 24.7,
+   "feel": 28.6,
+   "hum": 93.0,
    "info": "多云",
    "rain": 0.0,
    "wind_d": "东南风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
     {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "阴",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
-    {
      "date": "2026-08-21",
-     "day_info": "多云",
-     "day_t": "35",
-     "night_info": "多云",
+     "day_info": "小雨",
+     "day_t": "33",
+     "night_info": "晴",
      "night_t": "24",
      "wind_d": "北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
-     "day_info": "多云",
+     "day_info": "晴",
      "day_t": "36",
-     "night_info": "多云",
+     "night_info": "晴",
      "night_t": "24",
-     "wind_d": "北风",
+     "wind_d": "东风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
      "day_info": "晴",
-     "day_t": "37",
-     "night_info": "晴",
-     "night_t": "24",
-     "wind_d": "北风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-24",
-     "day_info": "晴",
-     "day_t": "36",
+     "day_t": "38",
      "night_info": "晴",
      "night_t": "24",
      "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
+     "date": "2026-08-24",
+     "day_info": "晴",
+     "day_t": "38",
+     "night_info": "晴",
+     "night_t": "25",
+     "wind_d": "东北风",
+     "wind_p": "微风"
+    },
+    {
      "date": "2026-08-25",
-     "day_info": "多云",
-     "day_t": "35",
+     "day_info": "小雨",
+     "day_t": "36",
      "night_info": "晴",
      "night_t": "25",
      "wind_d": "东北风",
@@ -2613,9 +2604,18 @@
      "date": "2026-08-26",
      "day_info": "多云",
      "day_t": "37",
-     "night_info": "多云",
+     "night_info": "晴",
      "night_t": "24",
      "wind_d": "东风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "37",
+     "night_info": "多云",
+     "night_t": "25",
+     "wind_d": "东南风",
      "wind_p": "微风"
     }
    ]
@@ -2623,54 +2623,36 @@
   {
    "n": "石柱土家族自治县",
    "st": "石柱",
-   "t": 25.5,
-   "feel": 29.1,
-   "hum": 89.0,
-   "info": "大雨",
-   "rain": 8.3,
-   "wind_d": "西北风",
+   "t": 23.4,
+   "feel": 26.4,
+   "hum": 95.0,
+   "info": "晴",
+   "rain": 0.0,
+   "wind_d": "东北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "多云",
-     "night_t": "22",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "小雨",
      "day_t": "31",
-     "night_info": "多云",
+     "night_info": "晴",
      "night_t": "22",
-     "wind_d": "西风",
+     "wind_d": "西北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "小雨",
-     "day_t": "32",
-     "night_info": "多云",
+     "day_t": "33",
+     "night_info": "晴",
      "night_t": "22",
-     "wind_d": "西南风",
+     "wind_d": "东南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
-     "day_info": "多云",
-     "day_t": "33",
-     "night_info": "晴",
-     "night_t": "23",
-     "wind_d": "西风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-24",
-     "day_info": "小雨",
+     "day_info": "晴",
      "day_t": "34",
      "night_info": "晴",
      "night_t": "23",
@@ -2678,17 +2660,35 @@
      "wind_p": "微风"
     },
     {
+     "date": "2026-08-24",
+     "day_info": "多云",
+     "day_t": "33",
+     "night_info": "晴",
+     "night_t": "23",
+     "wind_d": "西北风",
+     "wind_p": "微风"
+    },
+    {
      "date": "2026-08-25",
      "day_info": "小雨",
-     "day_t": "33",
+     "day_t": "34",
      "night_info": "多云",
      "night_t": "22",
-     "wind_d": "西北风",
+     "wind_d": "西风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
      "day_info": "多云",
+     "day_t": "35",
+     "night_info": "多云",
+     "night_t": "23",
+     "wind_d": "东南风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "小雨",
      "day_t": "35",
      "night_info": "多云",
      "night_t": "22",
@@ -2700,24 +2700,15 @@
   {
    "n": "秀山土家族苗族自治县",
    "st": "秀山",
-   "t": 24.2,
-   "feel": 28.5,
-   "hum": 96.0,
-   "info": "大暴雨",
-   "rain": 43.6,
-   "wind_d": "西南风",
+   "t": 23.2,
+   "feel": 27.0,
+   "hum": 99.0,
+   "info": "小雨",
+   "rain": 0.1,
+   "wind_d": "西北风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "阴",
-     "night_t": "23",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "多云",
@@ -2731,35 +2722,35 @@
      "date": "2026-08-22",
      "day_info": "多云",
      "day_t": "33",
-     "night_info": "多云",
-     "night_t": "22",
+     "night_info": "晴",
+     "night_t": "23",
      "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
      "day_info": "多云",
-     "day_t": "33",
+     "day_t": "32",
      "night_info": "小雨",
      "night_t": "22",
-     "wind_d": "东风",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-24",
      "day_info": "小雨",
-     "day_t": "33",
+     "day_t": "32",
      "night_info": "小雨",
      "night_t": "22",
-     "wind_d": "东风",
+     "wind_d": "西北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-25",
      "day_info": "中雨",
-     "day_t": "30",
+     "day_t": "29",
      "night_info": "小雨",
-     "night_t": "23",
+     "night_t": "22",
      "wind_d": "东北风",
      "wind_p": "微风"
     },
@@ -2769,7 +2760,16 @@
      "day_t": "31",
      "night_info": "小雨",
      "night_t": "22",
-     "wind_d": "东北风",
+     "wind_d": "东风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "小雨",
+     "day_t": "30",
+     "night_info": "小雨",
+     "night_t": "22",
+     "wind_d": "南风",
      "wind_p": "微风"
     }
    ]
@@ -2777,46 +2777,37 @@
   {
    "n": "酉阳土家族苗族自治县",
    "st": "酉阳",
-   "t": 28.3,
-   "feel": 30.1,
-   "hum": 63.0,
+   "t": 21.9,
+   "feel": 25.4,
+   "hum": 99.0,
    "info": "多云",
    "rain": 0.0,
-   "wind_d": "东北风",
-   "wind_p": "3级",
-   "pub": "2026-08-20 17:30",
+   "wind_d": "西北风",
+   "wind_p": "微风",
+   "pub": "2026-08-21 07:20",
    "fc": [
     {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "多云",
-     "night_t": "22",
-     "wind_d": null,
-     "wind_p": null
-    },
-    {
      "date": "2026-08-21",
-     "day_info": "多云",
+     "day_info": "晴",
      "day_t": "31",
-     "night_info": "多云",
-     "night_t": "22",
+     "night_info": "小雨",
+     "night_t": "21",
      "wind_d": "东风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-22",
      "day_info": "多云",
-     "day_t": "31",
-     "night_info": "多云",
+     "day_t": "30",
+     "night_info": "晴",
      "night_t": "21",
-     "wind_d": "东风",
+     "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-23",
-     "day_info": "多云",
-     "day_t": "31",
+     "day_info": "晴",
+     "day_t": "32",
      "night_info": "小雨",
      "night_t": "21",
      "wind_d": "东风",
@@ -2833,8 +2824,8 @@
     },
     {
      "date": "2026-08-25",
-     "day_info": "小雨",
-     "day_t": "30",
+     "day_info": "中雨",
+     "day_t": "28",
      "night_info": "小雨",
      "night_t": "21",
      "wind_d": "东北风",
@@ -2843,8 +2834,17 @@
     {
      "date": "2026-08-26",
      "day_info": "小雨",
-     "day_t": "30",
+     "day_t": "29",
      "night_info": "小雨",
+     "night_t": "22",
+     "wind_d": "东风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "多云",
+     "day_t": "29",
+     "night_info": "多云",
      "night_t": "21",
      "wind_d": "东风",
      "wind_p": "微风"
@@ -2854,56 +2854,47 @@
   {
    "n": "彭水苗族土家族自治县",
    "st": "彭水",
-   "t": 31.6,
-   "feel": 36.9,
-   "hum": 67.0,
+   "t": 25.1,
+   "feel": 30.1,
+   "hum": 97.0,
    "info": "多云",
    "rain": 0.0,
    "wind_d": "东南风",
    "wind_p": "微风",
-   "pub": "2026-08-20 17:30",
+   "pub": "2026-08-21 07:20",
    "fc": [
-    {
-     "date": "2026-08-20",
-     "day_info": null,
-     "day_t": null,
-     "night_info": "阴",
-     "night_t": "24",
-     "wind_d": null,
-     "wind_p": null
-    },
     {
      "date": "2026-08-21",
      "day_info": "小雨",
-     "day_t": "34",
-     "night_info": "多云",
-     "night_t": "25",
-     "wind_d": "北风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-22",
-     "day_info": "小雨",
-     "day_t": "35",
+     "day_t": "33",
      "night_info": "小雨",
-     "night_t": "25",
-     "wind_d": "北风",
-     "wind_p": "微风"
-    },
-    {
-     "date": "2026-08-23",
-     "day_info": "多云",
-     "day_t": "37",
-     "night_info": "晴",
      "night_t": "25",
      "wind_d": "东北风",
      "wind_p": "微风"
     },
     {
-     "date": "2026-08-24",
+     "date": "2026-08-22",
      "day_info": "小雨",
-     "day_t": "37",
+     "day_t": "36",
      "night_info": "小雨",
+     "night_t": "25",
+     "wind_d": "东北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-23",
+     "day_info": "晴",
+     "day_t": "37",
+     "night_info": "晴",
+     "night_t": "25",
+     "wind_d": "北风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-24",
+     "day_info": "晴",
+     "day_t": "39",
+     "night_info": "多云",
      "night_t": "25",
      "wind_d": "北风",
      "wind_p": "微风"
@@ -2913,17 +2904,26 @@
      "day_info": "小雨",
      "day_t": "37",
      "night_info": "小雨",
-     "night_t": "25",
-     "wind_d": "北风",
+     "night_t": "24",
+     "wind_d": "东南风",
      "wind_p": "微风"
     },
     {
      "date": "2026-08-26",
      "day_info": "多云",
      "day_t": "35",
-     "night_info": "小雨",
+     "night_info": "多云",
      "night_t": "25",
      "wind_d": "东风",
+     "wind_p": "微风"
+    },
+    {
+     "date": "2026-08-27",
+     "day_info": "小雨",
+     "day_t": "35",
+     "night_info": "多云",
+     "night_t": "25",
+     "wind_d": "东南风",
      "wind_p": "微风"
     }
    ]
@@ -2931,13 +2931,22 @@
  ],
  "alerts": [
   {
-   "title": "重庆市涪陵区气象台发布暴雨蓝色预警信号",
-   "time": "2026/08/20 17:30",
+   "title": "重庆市武隆区气象台发布暴雨蓝色预警信号",
+   "time": "2026/08/21 05:51",
    "type": "暴雨",
    "level": "蓝色",
-   "district": "涪陵区",
+   "district": "武隆区",
    "city_level": "区县气象台",
-   "detail": "涪陵区气象台2026年8月20日17时30分发布“暴雨蓝色预警信号”，预计20日17:30-23:30，珍溪、南沱、百胜等3个镇将出现强降水，最大雨量20～50毫米，最大小时雨量20～40毫米，并伴有雷电、阵性大风，请注意防范。"
+   "detail": "武隆区气象台2026年8月21日5时40分发布“暴雨蓝色预警信号”，预计21日5:40-11:40，火炉、土地、沧沟、桐梓、仙女山、后坪等6个街镇乡将出现强降水，最大雨量40～70毫米，最大小时雨量30～45毫米。局地伴有雷电、阵性大风，请注意防范。"
+  },
+  {
+   "title": "重庆市县彭水苗族土家族自治县气象台发布暴雨黄色预警信号",
+   "time": "2026/08/21 04:06",
+   "type": "暴雨",
+   "level": "黄色",
+   "district": "彭水苗族土家族自治县",
+   "city_level": "区县气象台",
+   "detail": "彭水自治县气象台2026年8月21日4时00分升级发布“暴雨黄色预警信号”，预计21日4:00-10:00，龙射、平安、鹿鸣、高谷、棣棠等5个乡镇降水仍将持续，最大雨量60～100毫米，最大小时雨量30～60毫米，请注意防范。"
   },
   {
    "title": "重庆市武隆区气象台发布雷电黄色预警信号",
@@ -2958,42 +2967,6 @@
    "detail": "南川区气象台2026年8月20日17时10分升级发布“暴雨黄色预警信号”，过去1小时内，南城街道官地站雨量已达50毫米，预计20日17:10-23:10，福寿、西城、木凉、南城、兴隆、乾丰、黎香湖、白沙等镇街降水仍将持续，最大雨量30～60毫米。此次过程从20日15时开始，过程最大累计雨量可达50～80毫米，局地伴有雷电、阵性大风，请注意防范。"
   },
   {
-   "title": "重庆市巴南区气象台发布暴雨蓝色预警信号",
-   "time": "2026/08/20 16:57",
-   "type": "暴雨",
-   "level": "蓝色",
-   "district": "巴南区",
-   "city_level": "区县气象台",
-   "detail": "巴南区气象台2026年8月20日16时50分发布“暴雨蓝色预警信号”，预计20日16:50-22:50，姜家、东温泉、石龙、石滩、丰盛、天星寺、接龙、圣灯山、安澜等9个镇将出现强降水，最大雨量20～50毫米，最大小时雨量20～40毫米，局地伴有雷电、阵性大风等强对流天气，请注意防范。"
-  },
-  {
-   "title": "重庆市县丰都县气象台发布暴雨蓝色预警信号",
-   "time": "2026/08/20 16:39",
-   "type": "暴雨",
-   "level": "蓝色",
-   "district": "丰都县",
-   "city_level": "区县气象台",
-   "detail": "丰都县气象台2026年8月20日16时30分发布“暴雨蓝色预警信号”，预计20日16:30-22:30，江池、太平坝、暨龙、都督、武平、南天湖、三建、龙河、栗子、仙女湖、包鸾、虎威、社坛、兴龙、湛普、三合、双路、兴义、高家、名山等20个乡镇将出现强降水，最大雨量30～50毫米，最大小时雨量20～30毫米。局地伴有雷电、阵性大风，请注意防范。"
-  },
-  {
-   "title": "重庆市县秀山土家族苗族自治县气象台发布暴雨黄色预警信号",
-   "time": "2026/08/20 16:11",
-   "type": "暴雨",
-   "level": "黄色",
-   "district": "秀山土家族苗族自治县",
-   "city_level": "区县气象台",
-   "detail": "秀山县气象台2026年8月20日16时10分发布“暴雨黄色预警信号”，预计20日16:10-22:10，妙泉、中平、雅江、石耶、平凯、岑溪、官庄等7个乡镇将出现强降水，最大雨量50～80毫米，最大小时雨量40～60毫米，局地可能伴有雷电、阵性大风，请注意防范。"
-  },
-  {
-   "title": "重庆市县秀山土家族苗族自治县气象台发布雷电黄色预警信号",
-   "time": "2026/08/20 15:48",
-   "type": "雷电",
-   "level": "黄色",
-   "district": "秀山土家族苗族自治县",
-   "city_level": "区县气象台",
-   "detail": "秀山县气象台2026年8月20日15时30分发布“雷电黄色预警信号”，预计20日15:40-21:40，中和、乌杨、岑溪、中平、涌洞、雅江、洪安、大溪、峨溶、石堤、里仁、膏田、溶溪、官庄、溪口、龙池、妙泉、宋农、海洋、钟灵、梅江、清溪场、隘口、兰桥、平凯、龙凤坝、石耶等27个乡镇街道，将发生雷电活动，局地可能伴有短时强降水、阵性大风，请注意防范。"
-  },
-  {
    "title": "重庆市南川区气象台发布雷电黄色预警信号",
    "time": "2026/08/20 15:48",
    "type": "雷电",
@@ -3003,24 +2976,6 @@
    "detail": "南川区气象台2026年8月20日15时50分发布“雷电黄色预警信号”，预计20日15:50-21:50，兴隆、西城、东城、鸣玉、福寿、冷水关、民主、大有、德隆、南平、石莲等镇街内可能发生雷电活动，并伴有阵性大风和短时强降水，请注意防范。"
   },
   {
-   "title": "重庆市县石柱土家族自治县气象台发布暴雨蓝色预警信号",
-   "time": "2026/08/20 14:37",
-   "type": "暴雨",
-   "level": "蓝色",
-   "district": "石柱土家族自治县",
-   "city_level": "区县气象台",
-   "detail": "石柱县气象台2026年8月20日14时40分发布“暴雨蓝色预警信号”，预计20日14:40-20:40，黄水、枫木、马武、龙潭、黄鹤、新乐、金铃、冷水、沙子、中益、六塘等乡镇将出现强降水，最大雨量30～50毫米，并伴有雷电、阵性大风，请注意防范。"
-  },
-  {
-   "title": "重庆市县巫山县气象台发布大雾黄色预警信号",
-   "time": "2026/08/20 10:21",
-   "type": "大雾",
-   "level": "黄色",
-   "district": "巫山县",
-   "city_level": "区县气象台",
-   "detail": "巫山县气象台2026年8月20日10时20分发布“大雾黄色预警信号”，预计20日10:20-19:20，当阳、两坪、骡坪、培石、三溪、竹贤、笃坪、邓家、高唐、龙门、双龙、金坪、福田、龙溪、大昌、平河、官阳、铜鼓、庙宇、官渡、红椿、抱龙、大溪、巫峡、曲尺、建平等26个乡镇（街道）可能出现能见度小于500米的雾，局地能见度小于200米，请注意防范。"
-  },
-  {
    "title": "重庆市县奉节县气象台发布暴雨黄色预警信号",
    "time": "2026/08/20 08:00",
    "type": "暴雨",
@@ -3028,60 +2983,6 @@
    "district": "奉节县",
    "city_level": "区县气象台",
    "detail": "奉节县气象台2026年8月20日7时50分升级发布“暴雨黄色预警信号”，预计20日8:00-14:00，平安、青莲、竹园等3个乡镇降水仍将持续，最大雨量30～50毫米，最大小时雨量20～40毫米。此次过程从20日06时开始，上述地区过程最大累计雨量可达80～120毫米，局地伴有雷电、阵性大风，请注意防范。"
-  },
-  {
-   "title": "重庆市县云阳县气象台发布暴雨黄色预警信号",
-   "time": "2026/08/20 07:39",
-   "type": "暴雨",
-   "level": "黄色",
-   "district": "云阳县",
-   "city_level": "区县气象台",
-   "detail": "云阳县气象台2026年8月20日7时30分升级发布“暴雨黄色预警信号”，过去6小时沙市镇上坪站累计雨量已达79毫米，预计20日7:30-13:30，上坝、沙市、桑坪强降水仍将持续，最大小时雨量30～50毫米，最大雨量80～110毫米。洞鹿、石门、大阳、双土、龙洞、养鹿、渠马、双龙、江口、路阳、鱼泉、后叶、农坝、双江、黄石、高阳、人和、水口、平安、南溪、巴阳、盘龙、青龙等乡镇（街道）降水仍将持续，最大累计雨量30～60毫米，最大小时雨量20～30毫米。此次过程从20日4时开始，过程最大累计雨量可达50～120毫米，局地伴有雷电、阵性大风，请注意防范。"
-  },
-  {
-   "title": "重庆市县忠县气象台发布暴雨黄色预警信号",
-   "time": "2026/08/20 07:30",
-   "type": "暴雨",
-   "level": "黄色",
-   "district": "忠县",
-   "city_level": "区县气象台",
-   "detail": "忠县气象台2026年8月20日7时20分继续发布“暴雨黄色预警信号”，过去1小时野鹤羊马降雨量已达43.8毫米，预计20日7:20-10:20，白公、复兴、东溪、忠州、新生、野鹤、涂井、石宝、黄金等9个乡镇（街道）降水仍将持续，最大雨量60～90毫米，最大小时雨量40～60毫米。此次过程从20日03时开始，过程最大累计雨量可达60～90毫米，并伴有雷电，请注意防范。"
-  },
-  {
-   "title": "重庆市县云阳县气象台发布暴雨蓝色预警信号",
-   "time": "2026/08/20 06:10",
-   "type": "暴雨",
-   "level": "蓝色",
-   "district": "云阳县",
-   "city_level": "区县气象台",
-   "detail": "云阳县气象台2026年8月20日6时10分继续发布“暴雨蓝色预警信号”，预计20日6:10-12:10，双土、养鹿、渠马、双龙、江口、路阳、鱼泉、后叶、农坝、黄石、高阳、人和、平安、南溪、巴阳、桑坪、沙市、上坝、大阳、石门、双江、青龙、水口、龙洞、洞鹿、盘龙等乡镇（街道）降水仍将持续，最大雨量30～60毫米，最大小时雨量20～40毫米。此次过程从20日4时开始，过程最大累计雨量可达40～70毫米，局地伴有雷电、阵性大风，请注意防范。"
-  },
-  {
-   "title": "重庆市县巫溪县气象台发布暴雨黄色预警信号",
-   "time": "2026/08/20 05:52",
-   "type": "暴雨",
-   "level": "黄色",
-   "district": "巫溪县",
-   "city_level": "区县气象台",
-   "detail": "巫溪县气象台2026年8月20日5时50分升级发布“暴雨黄色预警信号”，预计20日5:50-11:50，红池坝、田坝、文峰、朝阳、尖山、天元、土城等乡镇降水仍将持续，最大雨量50～90毫米，最大小时雨量30～50毫米。此次过程从20日04时开始，过程最大累计雨量可达70～100毫米，局地伴有雷电、阵性大风，请注意防范。"
-  },
-  {
-   "title": "重庆市县忠县气象台发布暴雨蓝色预警信号",
-   "time": "2026/08/20 05:47",
-   "type": "暴雨",
-   "level": "蓝色",
-   "district": "忠县",
-   "city_level": "区县气象台",
-   "detail": "忠县气象台2026年8月20日5时40分继续发布“暴雨蓝色预警信号”，预计20日5:40-11:40，乌杨、复兴、东溪、任家、新生、白公、忠州、磨子等8个乡镇（街道）降水仍将持续，最大雨量30～50毫米，最大小时雨量30～50毫米。此次过程从20日03时开始，过程最大累计雨量可达30～50毫米，局地伴有雷电、阵性大风，请注意防范。"
-  },
-  {
-   "title": "重庆市万州区气象台发布暴雨黄色预警信号",
-   "time": "2026/08/20 05:46",
-   "type": "暴雨",
-   "level": "黄色",
-   "district": "万州区",
-   "city_level": "区县气象台",
-   "detail": "万州区气象台2026年8月20日5时40分升级发布“暴雨黄色预警信号”，预计20日5:40-11:40，高笋塘、太龙、钟鼓楼、大周、熊家、小周、牌楼、陈家坝、李河、高梁、铁峰、太白、沙河、天城、周家坝、九池、长坪、瀼渡、武陵、新乡、郭村、燕山等镇乡街道降水仍将持续，最大雨量40～70毫米，最大小时雨量40～60毫米。此次过程从20日5时开始，过程最大累计雨量可达40～80毫米，伴有雷电、阵性大风，请注意防范。"
   }
  ],
  "sources": [
