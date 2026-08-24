@@ -3,7 +3,7 @@
   "data_source": "重庆市农业农村委员会",
   "price_name": "待宰活猪收购均价",
   "mapping_rule": "每一期周报价格映射至监测周全部自然日；起止日均计入；缺失不得估算或顺延。",
-  "updated_at": "2026-08-21T10:09:27+08:00",
+  "updated_at": "2026-08-24T10:08:42+08:00",
   "latest_verified_week": 33,
   "records": [
     {
