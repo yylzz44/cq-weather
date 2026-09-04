@@ -2,8 +2,8 @@
   "schema_version": 1,
   "data_source": "重庆市农业农村委员会",
   "price_name": "待宰活猪收购均价",
-  "updated_at": "2026-08-27T18:10:58+08:00",
-  "latest_verified_week": 34,
+  "updated_at": "2026-09-04T12:59:33+08:00",
+  "latest_verified_week": 35,
   "records": [
     {
       "year": 2026,
@@ -446,6 +446,19 @@
       "source_title": "重庆农产品及农资价格周报2026年第34期",
       "fetched_at": "2026-08-27T18:10:58+08:00",
       "status": "图片OCR读取“生猪—本周均价”（置信度91.7；环比仅作提示）"
+    },
+    {
+      "year": 2026,
+      "week": 35,
+      "period_start": "2026-08-24",
+      "period_end": "2026-08-30",
+      "pig_purchase_price": 12.25,
+      "unit": "元/公斤",
+      "publication_date": "2026-09-02",
+      "source_url": "https://nyncw.cq.gov.cn/xxgk_161/sczx/202609/t20260903_16027481.html",
+      "source_title": "重庆农产品及农资价格周报2026年第35期",
+      "fetched_at": "2026-09-04T12:59:33+08:00",
+      "status": "图片OCR读取“生猪—本周均价”（置信度92.0；环比仅作提示）"
     }
   ]
 }
