@@ -139,22 +139,18 @@ def normalize_url(base: str, value: str) -> str:
 
 def discover_articles() -> list[tuple[str, str]]:
     discovered: dict[str, str] = {}
-    failed_pages = []
     for list_url in LIST_URLS:
         try:
             page = parse_page(fetch_html(list_url))
         except Exception as exc:  # noqa: BLE001 - 必须把单页失败写入日志后继续
             logging.warning("周报列表页读取失败：%s；%s", list_url, exc)
-            failed_pages.append(list_url)
-            continue
+            raise RuntimeError(f"1个列表页读取失败（{list_url}），无法确认是否有新周报；本次不修改价格库。") from exc
         for href, title in page.links:
             if "重庆农产品及农资价格周报" not in title:
                 continue
             url = normalize_url(list_url, href)
             if "/sczx/" in url:
                 discovered[url] = title
-    if failed_pages:
-        raise RuntimeError(f"{len(failed_pages)}个列表页读取失败，无法确认周报是否更新；本次不修改价格库。")
     if not discovered:
         raise RuntimeError("列表页未发现任何目标周报，可能是页面结构变化；不能当作没有新数据。")
     return sorted(discovered.items())

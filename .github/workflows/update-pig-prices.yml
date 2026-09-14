@@ -39,8 +39,14 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-chi-sim
 
       - name: 检查新周报
+        id: fetch
         working-directory: pig-income-claim
         run: python scripts/fetch_pig_weekly_prices.py
+
+      - name: 抓取失败时诊断农委网络
+        if: failure() && steps.fetch.conclusion == 'failure'
+        working-directory: pig-income-claim
+        run: python scripts/diagnose_nyncw_access.py
 
       - name: 重新生成每日价格
         working-directory: pig-income-claim
