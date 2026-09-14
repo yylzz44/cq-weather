@@ -2,15 +2,26 @@ name: 更新育肥猪待宰活猪价格
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-pig-prices.yml'
+      - 'pig-income-claim/scripts/**'
+      - 'pig-income-claim/tests/test_price_scripts.py'
   schedule:
     - cron: "30 0 * * 1-5"
 
 permissions:
   contents: write
 
+concurrency:
+  group: update-pig-prices
+  cancel-in-progress: false
+
 jobs:
   update-prices:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: 检出网站文件
         uses: actions/checkout@v4
@@ -19,6 +30,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: 检查抓价及数据生成规则
+        working-directory: pig-income-claim
+        run: python -m unittest discover -s tests -p 'test_price_scripts.py' -v
 
       - name: 安装中文OCR
         run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-chi-sim
@@ -41,4 +56,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add pig-income-claim/data
           git commit -m "data: 更新育肥猪待宰活猪价格"
+          git pull --rebase origin main
           git push

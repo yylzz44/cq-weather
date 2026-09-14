@@ -72,6 +72,12 @@ def main() -> int:
         "latest_verified_week": weekly.get("latest_verified_week"),
         "records": records,
     }
+    if daily_path.exists():
+        previous = json.loads(daily_path.read_text(encoding="utf-8"))
+        without_time = lambda value: {key: item for key, item in value.items() if key != "updated_at"}
+        if without_time(previous) == without_time(payload):
+            print("每日价格内容未变化，保留原文件及更新时间。")
+            return 0
     daily_path.parent.mkdir(parents=True, exist_ok=True)
     daily_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"已生成{len(records)}个自然日；有价格{len(mapped)}天；缺失{len(records) - len(mapped)}天。")

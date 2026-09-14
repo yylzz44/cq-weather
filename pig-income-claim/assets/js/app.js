@@ -79,7 +79,7 @@ function populateTargetMonths() {
   dom.targetMonth.innerHTML = records.length
     ? records.map((record) => `<option value="${escapeHtml(record.month)}">${escapeHtml(record.display_month || displayMonth(record.month))}</option>`).join("")
     : '<option value="">暂无本地目标价格</option>';
-  if (records.some((record) => record.month === "2026-08")) dom.targetMonth.value = "2026-08";
+  if (records.length) dom.targetMonth.value = records.map((record) => record.month).sort().at(-1);
   renderAutoTarget();
 }
 
@@ -382,11 +382,11 @@ function resetAll() {
   dom.insuredCount.value = "";
   dom.previousCount.value = "0";
   document.querySelector('input[name="target-mode"][value="auto"]').checked = true;
-  dom.manualMonth.value = "2026-08";
+  dom.manualMonth.value = [...dom.targetMonth.options].map((option) => option.value).sort().at(-1) || "";
   dom.manualPrice.value = "";
   dom.manualDate.value = "";
   dom.manualNote.value = "";
-  if ([...dom.targetMonth.options].some((option) => option.value === "2026-08")) dom.targetMonth.value = "2026-08";
+  dom.targetMonth.value = dom.manualMonth.value;
   dom.periodList.innerHTML = "";
   createPeriod();
   toggleTargetMode();

@@ -19,8 +19,11 @@ import json
 import logging
 import re
 import shutil
+import ssl
 import subprocess
 import tempfile
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from html.parser import HTMLParser
@@ -32,7 +35,7 @@ LIST_URLS = [
     *[f"{BASE_URL}/xxgk_161/sczx/index_{page}.html" for page in range(1, 6)],
 ]
 USER_AGENT = "pig-income-claim-price-updater/1.0 (+GitHub Actions)"
-TIMEOUT = 30
+TIMEOUT = 15
 PRICE_MIN = 5.0
 PRICE_MAX = 40.0
 # 环比只作提示。该阈值仅决定是否在日志中提示“与环比反推值不一致”，
@@ -76,9 +79,42 @@ class PageParser(HTMLParser):
 
 
 def fetch_bytes(url: str) -> bytes:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
-        return response.read()
+    """有限重试；仅网络连接失败时尝试农委同一路径的公开HTTP入口。
+
+    不忽略证书错误，不绕过403/401等拒绝访问响应，不更换数据来源。
+    """
+    parsed = urllib.parse.urlsplit(url)
+    attempts = [url, url]
+    if (parsed.scheme == "https" and parsed.netloc == "nyncw.cq.gov.cn"
+            and parsed.path.startswith("/xxgk_161/sczx/")):
+        attempts.append(urllib.parse.urlunsplit(parsed._replace(scheme="http")))
+    last_error = None
+    connection_failed = False
+    for index, candidate in enumerate(attempts):
+        if candidate != url and not connection_failed:
+            break
+        if index:
+            time.sleep(1)
+        request = urllib.request.Request(candidate, headers={"User-Agent": USER_AGENT})
+        try:
+            with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
+                content = response.read()
+            if candidate != url:
+                logging.warning("HTTPS连接失败，已通过农委同路径HTTP入口读取：%s", candidate)
+            return content
+        except urllib.error.HTTPError as exc:
+            # 明确拒绝访问时停止，不尝试更换协议。
+            if exc.code not in {429, 500, 502, 503, 504}:
+                raise
+            last_error = exc
+            connection_failed = False
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
+            if isinstance(getattr(exc, "reason", None), ssl.SSLError):
+                raise
+            last_error = exc
+            connection_failed = True
+        logging.warning("读取失败（第%s次）：%s；%s", index + 1, candidate, last_error)
+    raise RuntimeError(f"重试后仍无法读取：{url}；{last_error}") from last_error
 
 
 def fetch_html(url: str) -> str:
@@ -103,11 +139,13 @@ def normalize_url(base: str, value: str) -> str:
 
 def discover_articles() -> list[tuple[str, str]]:
     discovered: dict[str, str] = {}
+    failed_pages = []
     for list_url in LIST_URLS:
         try:
             page = parse_page(fetch_html(list_url))
         except Exception as exc:  # noqa: BLE001 - 必须把单页失败写入日志后继续
             logging.warning("周报列表页读取失败：%s；%s", list_url, exc)
+            failed_pages.append(list_url)
             continue
         for href, title in page.links:
             if "重庆农产品及农资价格周报" not in title:
@@ -115,6 +153,10 @@ def discover_articles() -> list[tuple[str, str]]:
             url = normalize_url(list_url, href)
             if "/sczx/" in url:
                 discovered[url] = title
+    if failed_pages:
+        raise RuntimeError(f"{len(failed_pages)}个列表页读取失败，无法确认周报是否更新；本次不修改价格库。")
+    if not discovered:
+        raise RuntimeError("列表页未发现任何目标周报，可能是页面结构变化；不能当作没有新数据。")
     return sorted(discovered.items())
 
 
@@ -350,12 +392,17 @@ def main() -> int:
     records = list(payload.get("records", []))
     known = {(int(record["year"]), int(record["week"])) for record in records}
     known_urls = {str(record.get("source_url", "")) for record in records}
-    article_candidates = (
-        [(article_url, "") for article_url in args.article_url]
-        if args.article_url
-        else discover_articles()
-    )
+    try:
+        article_candidates = (
+            [(article_url, "") for article_url in args.article_url]
+            if args.article_url
+            else discover_articles()
+        )
+    except Exception as exc:
+        logging.error("检查失败：%s", exc)
+        return 1
     added = []
+    failures = []
 
     for article_url, listed_title in article_candidates:
         # 已核验并写入JSON的周报无需再次读取正文、下载图片和运行OCR。
@@ -372,15 +419,22 @@ def main() -> int:
             record = extract_article(article_url, records + added)
         except Exception as exc:  # noqa: BLE001
             logging.error("周报处理失败：%s；%s", article_url, exc)
+            failures.append(article_url)
             continue
-        if not record or (record["year"], record["week"]) in known:
+        if not record:
+            failures.append(article_url)
+            continue
+        if (record["year"], record["week"]) in known:
             continue
         added.append(record)
         known.add((record["year"], record["week"]))
         logging.info("新增第%s周：%.2f元/公斤", record["week"], record["pig_purchase_price"])
 
+    if failures:
+        logging.error("%s篇未入库周报读取或识别失败；本次不修改价格库，请查看上述日志。", len(failures))
+        return 1
     if not added:
-        logging.info("没有需要新增的周报数据，JSON未修改。")
+        logging.info("已成功检查周报列表，无需新增价格；JSON未修改。")
         return 0
 
     records.extend(added)

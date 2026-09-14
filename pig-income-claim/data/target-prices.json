@@ -1,8 +1,21 @@
 {
   "schema_version": 1,
   "data_source": "重庆市保险行业协会",
-  "updated_at": "2026-08-06T00:00:00+08:00",
+  "updated_at": "2026-09-14T08:01:37.378Z",
   "records": [
+    {
+      "month": "2026-09",
+      "display_month": "2026年9月",
+      "target_price": 12.95,
+      "display_precision": 2,
+      "unit": "元/公斤",
+      "announcement_date": null,
+      "announcement_title": "2026年9月重庆市育肥猪养殖收入保险目标价格公告",
+      "source_url": null,
+      "source_name": "重庆市保险行业协会",
+      "status": "用户确认行协已发布（待补公告日期及链接）",
+      "note": "用户确认9月目标价格为12.95元/公斤；公告日期及正式链接尚未提供，不作推测。"
+    },
     {
       "month": "2026-08",
       "display_month": "2026年8月",
