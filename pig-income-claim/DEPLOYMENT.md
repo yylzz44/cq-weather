@@ -1,49 +1,33 @@
-# GitHub Pages 部署说明
+# 当前部署与维护说明
 
-本阶段不要求直接操作现有 GitHub 仓库。以下说明供后续在 Chat 区域按用户实际页面逐步部署时使用。
+本工具已部署在 `yylzz44/cq-weather` 仓库的 `pig-income-claim/` 子目录，访问路径为 `/pig-income-claim/`。与气象主页共用 GitHub Pages 发布流程，但页面、数据、测算逻辑独立。
 
-## 子目录部署
+## 文件与入口
 
-把整个 `pig-income-claim` 文件夹放到 `www.ciccq.cn` 对应网站的发布根目录，预期访问地址为：
+- `index.html`：工具入口。
+- `assets/`：样式、数据加载及赔款计算程序。
+- `data/`：目标价格、周报价格、逐日价格。
+- `scripts/`：价格采集、网络诊断、逐日价格生成。
+- `tests/`：现有测算与价格脚本测试。
+- `samples/`、`screenshots/`：样例与历史截图，不代表实时结果。
 
-```text
-https://www.ciccq.cn/pig-income-claim/
+页面使用相对路径，保留本目录名称及结构即可继续使用现有网址。气象平台不添加通往本工具的入口；此次结构整理不改变访问权限。
+
+## 自动任务
+
+实际工作流位于仓库根目录 `.github/workflows/update-pig-prices.yml`，显示名称为“育肥猪测算｜更新价格数据”。不要在工具子目录再创建工作流副本。
+
+采集与数据生成步骤的工作目录为 `pig-income-claim`，任务仅提交 `pig-income-claim/data/`。与气象任务共用提交并发组，减少自动提交冲突；数据源抓取失败仍需单独排查。
+
+## 修改后验证
+
+在仓库根目录执行现有测试：
+
+```sh
+node --test pig-income-claim/tests/calculator.test.js
+python -m unittest discover -s pig-income-claim/tests -p 'test_price_scripts.py' -v
 ```
 
-所有网页、CSS、JavaScript 和 JSON 都使用相对路径，不依赖本地磁盘路径。
+发布后检查原地址、价格加载、测算和打印功能。修改价格请参照 `DATA_MAINTENANCE.md`，不要为目录调整改变计算口径。
 
-## GitHub Actions 文件位置
-
-GitHub 只识别仓库根目录下的 `.github/workflows/`。本交付包中的工作流模板位于：
-
-```text
-pig-income-claim/.github/workflows/update-pig-prices.yml
-```
-
-正式启用时，需要把它复制或合并到仓库根目录：
-
-```text
-.github/workflows/update-pig-prices.yml
-```
-
-模板默认假定子网站仍位于仓库根目录下的 `pig-income-claim/`。如果主站实际发布目录不同，需要同步调整工作流中的 `working-directory` 和数据路径。
-
-## 后续部署检查顺序
-
-1. 确认主站对应的 GitHub 仓库；
-2. 确认 GitHub Pages 使用的分支和发布根目录；
-3. 上传完整 `pig-income-claim/` 文件夹；
-4. 访问子目录地址并检查页面和 JSON 是否正常加载；
-5. 把工作流模板复制到仓库根目录 `.github/workflows/`；
-6. 在仓库设置中把 Actions 的 Workflow permissions 设为可写入内容；
-7. 手动运行一次“更新育肥猪待宰活猪价格”；
-8. 检查运行日志、两个 JSON 是否变化、自动提交是否成功；
-9. 再检查手机、电脑、打印为PDF以及正式域名路径。
-
-## 上线后必须复核
-
-- `2026年8月12.84元/公斤`对应的行业协会正式公告日期和链接；
-- 主站是否使用额外的路径前缀或缓存；
-- GitHub Actions 是否能正常安装中文 OCR；
-- 农委页面改版后图片识别是否仍能通过环比交叉校验；
-- 浏览器打印页眉页脚是否需要由使用人员手动关闭。
+回退方式及整理前存档见仓库根目录 `README.md`。
